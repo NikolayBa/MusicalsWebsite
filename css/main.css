@@ -1,0 +1,260 @@
+body, html{
+  background-color: #fff;
+}
+
+video{
+  width: 100%;
+}
+
+a.btn:hover{
+  background: #ef6c00;
+}
+.btn {
+  width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: inherit;
+    font-size: 100%;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 3;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-radius: 4px;
+    margin-bottom: 5.0em;
+  }
+
+  .text--white {
+      color: black;
+  }
+
+  .bg--transparent-white {
+    background: #fff;
+    background-color: rgba(255,255,255, 0.1);
+  }
+
+  .btn--clear {
+    padding: 0 28px;
+    border: 2px solid #FFF;
+    line-height: 42px;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.sponsor{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-color: white;
+}
+.navbar{
+  /*background-color: transparent;*/
+  position: fixed;
+  left:0px;
+  right: 0px;
+}
+
+.navbar-nav li a{
+  line-height: 50px;
+  color: white;
+}
+
+li a:hover{
+  color: green;
+}
+
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+
+hr {
+  color: black;
+}
+
+img{
+  max-width: 100%;
+}
+#roa{
+  max-width: 50%;
+  padding-bottom: 60px;
+}
+#orginizer{
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
+.quotes {
+  float: left;
+}
+
+.card{
+  width: 300px;
+  height: 300px;
+}
+
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+
+li{
+  display: inline;
+}
+/*QUOTATION CARD CSS DON'T EDIT*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic);
+
+
+$background: #eee;
+$black: #222222;
+$white: #ffffff;
+
+$default: #fff;
+$defaultTextColor: #222222;
+$defaultSecondaryTextColor: #eee;
+
+
+$red: #D32F2F;
+$redTextColor: $white;
+$redSecondaryTextColor: #F44336;
+
+$blue: #303F9F;
+$blueTextColor: $white;
+$blueSecondaryTextColor: #3F51B5;
+
+$yellow: #F9A825;
+$yellowTextColor: $black;
+$yellowSecondaryTextColor: #FBC02D;
+
+
+body {
+  background: $background;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+.quote-card {
+  background: $default;
+  color: $defaultTextColor;
+
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba($black, 0.12);
+
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+
+  p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 80%;
+  }
+
+  cite {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+
+  &:before {
+    font-family: Georgia, serif;
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 5em;
+    color: rgba($defaultSecondaryTextColor, 0.8);
+    font-weight: normal;
+  }
+
+  &:after {
+    font-family: Georgia, serif;
+    content: "”";
+    position: absolute;
+    bottom: -110px;
+    line-height: 100px;
+    right: -32px;
+    font-size: 25em;
+    color: rgba($defaultSecondaryTextColor, 0.8);
+    font-weight: normal;
+  }
+
+  @media(max-width: 640px) {
+    &:after {
+      font-size: 22em;
+      right: -25px;
+    }
+  }
+
+
+  &.blue-card {
+    background: $blue;
+    color: $blueTextColor;
+    box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+    &:before, &:after {
+      color: $blueSecondaryTextColor;
+    }
+  }
+
+  &.red-card {
+    background: $red;
+    color: $redTextColor;
+    box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+    &:before, &:after {
+      color: $redSecondaryTextColor;
+    }
+  }
+
+  &.yellow-card {
+    background: $yellow;
+    color: $yellowTextColor;
+    box-shadow: 0 1px 2px rgba($black, 0.12), 0 2px 4px rgba($black, 0.24);
+
+    &:before, &:after {
+      color: $yellowSecondaryTextColor;
+    }
+  }
+}
+
+
+.credits {
+  margin-top: 80px;
+  a {
+    color: $black;
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba($black, 0.24);
+    padding-bottom: 1px;
+    display: inline-block;
+    border-bottom: 1px dashed rgba($black, 0.24);
+    opacity: 0.6;
+
+    transition: 0.3s all ease-in;
+
+
+    &:hover {
+      border-bottom-style: solid;
+      opacity: 1;
+    }
+  }
+}
