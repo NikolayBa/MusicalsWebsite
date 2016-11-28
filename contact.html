@@ -93,41 +93,7 @@ body {font-family: "Lato", sans-serif}
 <!-- End Page Content -->
 </div>
 
-<!-- Add Google Maps -->
-<div id="map" style="width: 600px; height: 400px;"></div>
-<script type="text/javascript">
-    var locations = [
-      ['Blagoevgrad 21.03.2017 - 24.03.2017', 42.016380, 23.109741, 4],
-      ['Sofia 26.03.2017 ', 42.686339, 23.321228, 5],
-      ['Varna 28.03.2017', 43.209046, 27.913513, 3],
-      ['Ruse 30.03.2017', 43.842319, 25.968933, 2],
-      ['Plovediv 01.04.2017', 42.138697, 24.746704, 1]
-    ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 7,
-      center: new google.maps.LatLng(42.92, 25.25),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
-
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  </script>
 
 <footer class="ynnenu-container ynnenu-padding-64 ynnenu-center  ynnenu-light-grey ynnenu-xlarge">
 
