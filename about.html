@@ -9,27 +9,36 @@
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
+  <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
 <body>
 
 <!-- Navbar -->
-<div class="ynnenu-top">
-
-<ul class="ynnenu-navbar ynnenu-black ynnenu-card-2 ynnenu-left-align">
-  <li class="ynnenu-hide-medium ynnenu-hide-large ynnenu-opennav ynnenu-right">
-  <li><a href="index.html" class="ynnenu-hover-none ynnenu-hover-text-grey ynnenu-padding-large"><img src="assets/img/b.png" height="40px" width="40px"</img></a></li>
-  <li class="ynnenu-hide-small"><a href="cast.html" class="ynnenu-padding-large">CAST </a></li>
-  <li class="ynnenu-hide-small"><a href="about.html" class="ynnenu-padding-large">ABOUT US</a></li>
-  <li class="ynnenu-hide-small"><a href="contact.html" class="ynnenu-padding-large">CONTACT US</a></li>
-  <li class="ynnenu-hide-small ynnenu-dropdown-hover">
-    <a href="javascript:void(0)" class="ynnenu-hover-none ynnenu-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>
-    <div class="ynnenu-dropdown-content ynnenu-white ynnenu-card-4">
-      <a href="media.html">MUSICAL IN MEDIA</a>
-      <a href="projects.html">MUSICAL OVER THE YEARS</a>
-    </div>
-  </li>
-  <li class="ynnenu-hide-small ynnenu-right"><a href="javascript:void(0)" class="ynnenu-padding-large ynnenu-hover-red"><i class="fa fa-search"></i></a></li>
-</ul>
-</div>
+  <div class="ynnenu-top">
+    <ul class="ynnenu-navbar ynnenu-black ynnenu-card-2 ynnenu-left-align">
+      <li class="ynnenu-hide-medium ynnenu-hide-large ynnenu-opennav ynnenu-right">
+      <li><a href="index.html" class="ynnenu-hover-none ynnenu-hover-text-grey ynnenu-padding-large"><img src="assets/img/b.png" height="40px" width="40px"</img></a></li>
+      <li class="ynnenu-hide-small ynnenu-dropdown-hover"><a href="javascript:void(0)" class="ynnenu-padding-large">CAST <i class="fa fa-caret-down"></i> </a>
+      <div class="ynnenu-dropdown-content ynnenu-white ynnenu-card-4">
+        <a href="organizers.html">ORGANIZERS</a>
+        <a href="dancers.html">DANCERS</a>
+        <a href="actors.html">ACTORS</a>
+        <a href="back-vocals.html">BACK VOCALS</a>
+        <a href="creative-team.html">CREATIVE TEAM</a>
+      </div>
+      </li>
+      <li class="ynnenu-hide-small"><a href="contact.html" class="ynnenu-padding-large">ABOUT US</a></li>
+      <li class="ynnenu-hide-small"><a href="contact.html" class="ynnenu-padding-large">CONTACT US</a></li>
+      <li class="ynnenu-hide-small ynnenu-dropdown-hover">
+        <a href="javascript:void(0)" class="ynnenu-hover-none ynnenu-padding-large" title="More">MORE <i class="fa fa-caret-down"></i></a>
+        <div class="ynnenu-dropdown-content ynnenu-white ynnenu-card-4">
+          <a href="media.html">MUSICAL IN MEDIA</a>
+          <a href="projects.html">MUSICAL OVER THE YEARS</a>
+        </div>
+      </li>
+      <li class="ynnenu-hide-small ynnenu-right"><a href="javascript:void(0)" class="ynnenu-padding-large ynnenu-hover-red"><i class="fa fa-search"></i></a></li>
+    </ul>
+  </div>
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="ynnenu-hide ynnenu-hide-large ynnenu-hide-medium ynnenu-top" style="margin-top:46px">
@@ -79,7 +88,41 @@ body {font-family: "Lato", sans-serif}
 
 
 
+<!-- Add Google Maps -->
+<div id="map" style="width: 600px; height: 400px;"></div>
+<script type="text/javascript">
+    var locations = [
+      ['Blagoevgrad 21.03.2017 - 24.03.2017', 42.016380, 23.109741, 4],
+      ['Sofia 26.03.2017 ', 42.686339, 23.321228, 5],
+      ['Varna 28.03.2017', 43.209046, 27.913513, 3],
+      ['Ruse 30.03.2017', 43.842319, 25.968933, 2],
+      ['Plovediv 01.04.2017', 42.138697, 24.746704, 1]
+    ];
 
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: new google.maps.LatLng(42.92, 25.25),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
