@@ -6,6 +6,15 @@ video{
   width: 100%;
 }
 
+.project-page{
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.project-containter{
+  max-height: 400px;
+  position: static;;
+}
+
 a.btn:hover{
   background: #ef6c00;
 }
