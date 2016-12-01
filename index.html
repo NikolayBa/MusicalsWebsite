@@ -10,6 +10,7 @@
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Font-Awesome CSS -->
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+
   <!-- Navbar -->
   <div class="ynnenu-top">
     <ul class="ynnenu-navbar ynnenu-black ynnenu-card-2 ynnenu-left-align">
@@ -73,7 +75,7 @@
          <div class="carousel-caption text-center">
            <img id="roa" class="center-block" />
            <h1 style="margin-bottom:2em;">AUBG MUSICAL</h1>
-           <a type="button" style="margin-bottom:2em;" class="btn btn--clear text--white bg--transparent-white">Buy Tickets</a>
+           <a type="button" style="margin-bottom:2em;" class="btn btn--clear text--white bg--transparent-white">Dont' Buy Tickets</a>
          </div>
        </div>
      </div>
@@ -86,12 +88,24 @@
 
      <hr class="featurette-divider">
 
-     <div class="row featurette">
-       <div class="col-md-7 col-md-push-5">
+     <div class="row row-flex featurette">
+       <div class="col-md-7 col-md-push-5 col-flex">
          <h2 class="featurette-heading">ROCK OF AGES</h2>
-         <p class="lead">COMING SOON</p>
+         <p class="project-page">Lorem ipsum dolor sit amet, consectetur
+         adipiscing elit. Morbi sed tincidunt urna. Etiam sagittis tortor nec
+         mattis auctor. Morbi eu enim lorem. Duis fermentum massa sit amet
+         nulla tincidunt tincidunt. Aenean quis ligula condimentum turpis
+         vestibulum pellentesque. Vivamus tincidunt consequat est, id finibus
+         nulla semper et.</p>
+
+         <div id="demo" class="collapse project-page">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         </div>
+         <a id="eventdetail" type="submit" href="#demo" data-toggle="collapse" onclick="hideForm">Read More</a>
        </div>
-       <div class="col-md-5 col-md-pull-7">
+       <div class="col-md-5 col-md-pull-7 col-flex">
          <img class="featurette-image img-responsive center-block" src="assets/img/roa-logo.png" alt="Generic placeholder image" style="height: 300px">
        </div>
      </div>
@@ -99,7 +113,8 @@
 
    <hr class="featurette-divider">
 
-   <div class="container text-center" id="previews">
+   <!-- Block Menu -->
+   <div class="container text-center block" id="previews">
 
      <!-- first row -->
      <div class="row content-row">
@@ -172,33 +187,37 @@
 
       <hr class="featurette-divider divider">
 
-      <div class="container-fliud">
+      <div class="container-fliud text-center">
        <div class="row">
          <div class="sponsor">
-         <div class="col-md-2 col-md-offset-1">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           <div class="col-md-2 col-md-offset-1">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
          </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-       </div>
+        </div>
       </div>
-    </div>
+
 
   <!-- FOOTER -->
-  <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
+  <hr class="featurette-divider divider">
+  <div class="container">
+    <footer style="margin-bottom: 2em">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </div>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
@@ -211,7 +230,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

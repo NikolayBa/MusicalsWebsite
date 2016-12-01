@@ -30,3 +30,10 @@ function initMap() {
   });
 }
 // ========== END GOOGLE MAP ========== //
+
+// READ MORE //
+var hideForm = function() {
+  // to hide
+  var form = document.getElementById('eventdetail');
+  form.style.display = 'none';
+};
