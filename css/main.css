@@ -37,6 +37,27 @@ a.hideLink {
   flex: 1;
 }
 
+#hasu {
+    display: none;
+}
+
+#hmemphis {
+    display: none;
+}
+.gallery{
+    margin-top: 40px;
+}
+.gallery-item{
+	margin-bottom: 30px;
+}
+.modal-footer{
+	text-align: center;
+}
+.pagination{
+	margin: 0;
+}
+
+
 #slide-body{
     height: 55px;
     overflow: hidden;

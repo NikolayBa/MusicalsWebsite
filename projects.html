@@ -19,6 +19,25 @@
   <link rel="stylesheet" href="css/lib1.css">
   <link rel="stylesheet" href="css/fontana.css">
   <link rel="stylesheet" href="css/font.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(
+      function() {
+          $("#asu").click(function() {
+              $("#hasu").toggle();
+          });
+      });
+    </script>
+    <script>
+    $(document).ready(
+        function() {
+            $("#memphis").click(function() {
+                $("#hmemphis").toggle();
+            });
+        });
+      </script>
 </head>
 <body>
 
@@ -94,9 +113,64 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">ALL SHOOK UP (2014)</h2>
-        <p>All Shook Up includes the famous songs of the King of Rock Elvis Presley, and is based on the comedy "Twelfth Night" by William Shakespeare. The musical takes place in a small town in the Central States, where loud music and public affection is prohibited by the conservative mayor. The town, however, is shaken when a young rocker stops there in search of a mechanic and manages to conquer the heart of local girl. What follows is a series of love misunderstandings that will make the public shed tears of laughter, along with the sound of hits like "Jailhouse Rock" and "Heartbreak Hotel".
-    </p>
+        <p>All Shook Up includes the famous songs of the King of Rock Elvis Presley, and is based on the comedy "Twelfth Night" by William Shakespeare. The musical takes place in a small town in the Central States, where loud music and public affection is prohibited by the conservative mayor. The town, however, is shaken when a young rocker stops there in search of a mechanic and manages to conquer the heart of local girl. What follows is a series of love misunderstandings that will make the public shed tears of laughter, along with the sound of hits like "Jailhouse Rock" and "Heartbreak Hotel".</p>
+        <div id="asu"><a>expand</a></div>
+        <div id="hasu">
+          <div class="gallery">
+            <div class="container">
+              <div class="row">
+                        <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                            </a>
+                        </div> <!-- /.col -->
+
+                        <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                            </a>
+                        </div> <!-- /.col -->
+
+                        <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                            </a>
+                        </div> <!-- /.col -->
+
+                        <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
+                            </a>
+                        </div> <!-- /.col -->
+                    </div> <!--/.row  -->
+            </div> <!-- /.container -->
+            </div> <!-- /.gallery -->
+
+<div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+    </div> <!-- /.modal-header -->
+
+    <div class="modal-body">
+      <div id="carouselGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+        </div> <!-- /.carousel-inner -->
+      </div> <!-- /.carousel -->
+    </div> <!-- /.modal-body -->
+
+    <div class="modal-footer">
+      <ul class="pagination">
+      </ul>
+    </div> <!-- /.modal-footer -->
+  </div> <!-- /.modal-content -->
+</div> <!-- /.modal-dialog -->
+</div> <!-- /.modal -->
+        </div>
       </div>
+
       <div class="col-md-5">
         <img class="featurette-image img-responsive center-block" src="assets/img/asu.jpg" alt="Generic placeholder image">
       </div>
@@ -114,6 +188,62 @@
         <p>From the underground clubs of the 1950s in Memphis, Tennessee comes the new and thrilling Broadway musical. “Memphis” captures the public’s hearts with its explosive dances, incredible songs and an exciting story of fame and forbidden love. With an original score, “Memphis“ focuses on a white radio host who wants to change the world and an up-and-coming black singer ready for her big break.
 
 In 2010, “Memphis” wins 4 Tony Awards including the category for best musical .The Broadway Performance Club at the American University in Bulgaria is the first amateur ensemble in the world to get the official rights for the recreation of the musical.</p>
+      <div id="memphis"><a>expand</a>
+        <div id="hmemphis">
+          <div class="gallery">
+<div class="container">
+  <div class="row">
+            <div class="col-xs-3 gallery-item">
+                <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                    <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                </a>
+            </div> <!-- /.col -->
+
+            <div class="col-xs-3 gallery-item">
+                <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                </a>
+            </div> <!-- /.col -->
+
+            <div class="col-xs-3 gallery-item">
+                <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                </a>
+            </div> <!-- /.col -->
+
+            <div class="col-xs-3 gallery-item">
+                <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
+                </a>
+            </div> <!-- /.col -->
+        </div> <!--/.row  -->
+</div> <!-- /.container -->
+</div> <!-- /.gallery -->
+
+<div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+    </div> <!-- /.modal-header -->
+
+    <div class="modal-body">
+      <div id="carouselGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+        </div> <!-- /.carousel-inner -->
+      </div> <!-- /.carousel -->
+    </div> <!-- /.modal-body -->
+
+    <div class="modal-footer">
+      <ul class="pagination">
+      </ul>
+    </div> <!-- /.modal-footer -->
+  </div> <!-- /.modal-content -->
+</div> <!-- /.modal-dialog -->
+</div> <!-- /.modal -->
+</div>
+</div>
       </div>
       <div class="col-md-5 col-md-pull-7">
         <img class="featurette-image img-responsive center-block" src="assets/img/memphis.jpg" alt="Generic placeholder image">
