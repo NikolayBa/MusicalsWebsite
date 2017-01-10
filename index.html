@@ -7,10 +7,10 @@
 
 
   <title>AUBG Musical</title>
-  <link rel="shortcut icon" href="assets/img/b.png" >
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <!-- Font-Awesome CSS -->
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -23,14 +23,20 @@
 </head>
 
 <body>
+
   <!-- Navbar -->
-<!-- Navbar -->
   <div class="ynnenu-top">
     <ul class="ynnenu-navbar ynnenu-black ynnenu-card-2 ynnenu-left-align">
       <li class="ynnenu-hide-medium ynnenu-hide-large ynnenu-opennav ynnenu-right">
       <li><a href="index.html" class="ynnenu-hover-none ynnenu-hover-text-grey ynnenu-padding-large"><img src="assets/img/b.png" height="40px" width="40px"</img></a></li>
-      <li class="ynnenu-hide-small ynnenu-dropdown-hover"><a href="organizers.html" class="ynnenu-padding-large">CAST</i> </a>
-    
+      <li class="ynnenu-hide-small ynnenu-dropdown-hover"><a href="javascript:void(0)" class="ynnenu-padding-large">CAST <i class="fa fa-caret-down"></i> </a>
+      <div class="ynnenu-dropdown-content ynnenu-white ynnenu-card-4">
+        <a href="organizers.html">ORGANIZERS</a>
+        <a href="dancers.html">DANCERS</a>
+        <a href="actors.html">ACTORS</a>
+        <a href="back-vocals.html">BACK VOCALS</a>
+        <a href="creative-team.html">CREATIVE TEAM</a>
+      </div>
       </li>
       <li class="ynnenu-hide-small"><a href="about.html" class="ynnenu-padding-large">ABOUT US</a></li>
       <li class="ynnenu-hide-small"><a href="contact.html" class="ynnenu-padding-large">CONTACT US</a></li>
@@ -44,7 +50,6 @@
       <li class="ynnenu-hide-small ynnenu-right"><a href="javascript:void(0)" class="ynnenu-padding-large ynnenu-hover-red"><i class="fa fa-search"></i></a></li>
     </ul>
   </div>
-
 
   <!-- Navbar on small screens -->
 <div id="navDemo" class="ynnenu-hide ynnenu-hide-large ynnenu-hide-medium ynnenu-top" style="margin-top:46px">
@@ -83,12 +88,24 @@
 
      <hr class="featurette-divider">
 
-     <div class="row featurette">
-       <div class="col-md-7 col-md-push-5">
+     <div class="row row-flex featurette">
+       <div class="col-md-7 col-md-push-5 col-flex">
          <h2 class="featurette-heading">ROCK OF AGES</h2>
-         <p class="lead">COMING SOON</p>
+         <p class="project-page">Lorem ipsum dolor sit amet, consectetur
+         adipiscing elit. Morbi sed tincidunt urna. Etiam sagittis tortor nec
+         mattis auctor. Morbi eu enim lorem. Duis fermentum massa sit amet
+         nulla tincidunt tincidunt. Aenean quis ligula condimentum turpis
+         vestibulum pellentesque. Vivamus tincidunt consequat est, id finibus
+         nulla semper et.</p>
+
+         <div id="demo" class="collapse project-page">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         </div>
+         <a id="eventdetail" type="submit" href="#demo" data-toggle="collapse" onclick="hideForm">Read More</a>
        </div>
-       <div class="col-md-5 col-md-pull-7">
+       <div class="col-md-5 col-md-pull-7 col-flex">
          <img class="featurette-image img-responsive center-block" src="assets/img/roa-logo.png" alt="Generic placeholder image" style="height: 300px">
        </div>
      </div>
@@ -96,7 +113,8 @@
 
    <hr class="featurette-divider">
 
-   <div class="container text-center" id="previews">
+   <!-- Block Menu -->
+   <div class="container text-center block" id="previews">
 
      <!-- first row -->
      <div class="row content-row">
@@ -169,33 +187,37 @@
 
       <hr class="featurette-divider divider">
 
-      <div class="container-fliud">
+      <div class="container-fliud text-center">
        <div class="row">
          <div class="sponsor">
-         <div class="col-md-2 col-md-offset-1">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           <div class="col-md-2 col-md-offset-1">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
+           <div class="col-md-2">
+             <img src="assets/img/bpc-logo-cut.png" height="80px"/>
+           </div>
          </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-         <div class="col-md-2">
-           <img src="assets/img/bpc-logo-cut.png" height="80px"/>
-         </div>
-       </div>
+        </div>
       </div>
-    </div>
+
 
   <!-- FOOTER -->
-  <footer>
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
+  <hr class="featurette-divider divider">
+  <div class="container">
+    <footer style="margin-bottom: 2em">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </div>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>
@@ -208,7 +230,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

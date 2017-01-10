@@ -6,6 +6,20 @@ video{
   width: 100%;
 }
 
+.more {
+    display: none;
+    padding-top: 10px;
+}
+
+a.showLink, a.hideLink {
+    text-decoration: none;
+    -webkit-transition: 0.5s ease-out;
+    background: transparent url('down.gif') no-repeat left; }
+
+a.hideLink {
+    background: transparent url('up.gif') no-repeat left;
+}
+
 .project-page{
   font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -15,9 +29,46 @@ video{
   position: static;;
 }
 
+.row-flex{
+  display: flex;
+}
+
+.col-flex{
+  flex: 1;
+}
+
+#slide-body{
+    height: 55px;
+    overflow: hidden;
+    transition:             height 500ms ease;
+        -moz-transition:    height 500ms ease;
+        -ms-transition:     height 500ms ease;
+        -o-transition:      height 500ms ease;
+        -webkit-transition: height 500ms ease;
+}
+.expanded {
+    height: 150px !important;
+}
+
+.read-more{
+  position: absolute;
+}
+
 a.btn:hover{
   background: #ef6c00;
 }
+
+#d3 {
+    display: none;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
 .btn {
   width: 250px;
     display: inline-block;
@@ -34,7 +85,6 @@ a.btn:hover{
     padding-right: 1em;
     padding-left: 1em;
     border-radius: 4px;
-    margin-bottom: 5.0em;
   }
 
   .text--white {
@@ -64,6 +114,10 @@ a.btn:hover{
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   border-color: white;
+}
+
+.block a:hover{
+  text-decoration: none;
 }
 .navbar{
   /*background-color: transparent;*/
