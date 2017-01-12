@@ -65,8 +65,15 @@ a.hideLink {
 #hchicago{
   display: none;
 }
+.container{
+  overflow: hidden;
+}
+.gal {
+  height: 100%;
+}
 .gallery{
     margin-top: 40px;
+
 }
 .gallery-item{
 	margin-bottom: 30px;

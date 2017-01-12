@@ -22,6 +22,7 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script>
   $(document).ready(
@@ -138,61 +139,95 @@
   <!-- CATCH ME IF YOU CAN -->
   <hr class="featurette-divider">
   <div class="container project-page">
-    <div class="row featurette project-containter">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">CATCH ME IF YOU CAN (2016)</h2>
-        <p>Seeking fame and fortune, curious teenager Frank Abagnale. Jr. runs
-          away from home to begin an unforgettable adventure. With nothing more
-          than his boyish charm, a big imagination and millions of dollars in
-          forged checks, Frank successfully poses as a pilot, a doctor and a
-          lawyer. He's living the high life and is about to win the girl of his
-          dreams. But when Frank's lies catch the attention of FBI agent Carl
-          Hanratty, Carl pursues Frank across the country to make him pay for his
-          crimes.
-          Based on the hit film and the incredible true story, Catch Me If You
-          Can, is the high-flying musical comedy about chasing your dreams and
-          not getting caught. Nominated for 4 Tony awards, including Best Musical,
-          Catch Me If You Can is with a book by Terrence McNally and score Marc
-          Shaiman and Scott Wittman (Hairspray).
-        </p>
-        <div id="cmiyc"><a>Gallery</a></div>
-        <div id="hcmiyc">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+      <div class="row featurette project-containter">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">CATCH ME IF YOU CAN (2016)</h2>
+          <p>Seeking fame and fortune, curious teenager Frank Abagnale. Jr. runs
+            away from home to begin an unforgettable adventure. With nothing more
+            than his boyish charm, a big imagination and millions of dollars in
+            forged checks, Frank successfully poses as a pilot, a doctor and a
+            lawyer. He's living the high life and is about to win the girl of his
+            dreams. But when Frank's lies catch the attention of FBI agent Carl
+            Hanratty, Carl pursues Frank across the country to make him pay for
+            his crimes.
+            Based on the hit film and the incredible true story, Catch Me If You
+            Can, is the high-flying musical comedy about chasing your dreams and
+            not getting caught. Nominated for 4 Tony awards, including Best Musical,
+            Catch Me If You Can is with a book by Terrence McNally and score Marc
+            Shaiman and Scott Wittman (Hairspray).
+          </p>
+          <div class="panel-group">
+            <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a data-toggle="collapse" href="#collapse1">Creative Team</a>
+               </h4>
+             </div>
+             <div id="collapse1" class="panel-collapse collapse">
+               <div class="panel-body">
+                 <p>Lora Dineva - Producer</p>
+                 <p>Anna Stoycheva - Director</p>
+                 <p>Sofia Volkhonskaya - Assistant Director</p>
+                 <p>Stanislav Kimchev - Assistant Director</p>
+                 <p>Stefan Chilingirov - Assistant Director</p>
+                 <p>Aman Kutmanbekov - Choreographer</p>
+                 <p>Darya Bavykina - Choreographer</p>
+                 <p>Teodora Georgieva - Choreographer</p>
+                 <p>Zurab Pertsuliani - Choreographer</p>
+                 <p>Tsvetiana Zaharieva - Stage Manager</p>
+                 <p>Gergana Velichkova - Vocal Director</p>
+                 <p>Denitsa Hristova - Assistant Producer</p>
+                 <p>Martin Georgiev - Marketing Manager</p>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="assets/img/cmiyc.jpg" alt="Generic placeholder image">
+          </div>
         </div>
       </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="assets/img/cmiyc.jpg" alt="Generic placeholder image">
+  <!-- Gallery -->
+  <div class="container project-page">
+      <div class="row featurette project-containter container">
+        <div class="panel-gourp" style="position: relative">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <div id="cmiyc"><a data-toggle="collapse">Gallery</a></div>
+              </h4>
+            </div>
+            <div id="hcmiyc" class="panel-collapse collapse">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
         </div>
       </div>
-   </div>
+    </div>
 
   <!-- BURLESQUE -->
   <hr class="featurette-divider">
@@ -215,37 +250,28 @@
           a dramatic turn though when Ali's big voice makes her become the main
           attraction of the revue.
         </p>
-        <div id="burlesque"><a>Gallery</a></div>
-        <div id="hburlesque" class="col-md-7 col-md-pull-9">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse2">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse2" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Martin Georgiev - Producer</p>
+               <p>Angelina Markova - Director</p>
+               <p>Teodora Georgieva - Assistant Director, Choreographer</p>
+               <p>Tsvetiana Zaharieva - Assistant Director</p>
+               <p>Stanislav Kimchev - Assistant Director</p>
+               <p>Darya Bavykina - Choreographer</p>
+               <p>Yegor Ganin - Choreographer</p>
+               <p>Violeta Petkova - Choreographer</p>
+               <p>Violeta Petkova - Vocal Director</p>
+               <p>Anna Stoycheva - Vocal Director</p>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5 col-md-pull-7">
@@ -253,6 +279,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+            <div class="row featurette project-containter container">
+              <div class="panel-gourp" style="position: relative">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <div id="burlesque"><a data-toggle="collapse">Gallery</a></div>
+                    </h4>
+                  </div>
+                  <div id="hburlesque" class="panel-collapse collapse">
+                    <div class="gallery">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                            <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                            </a>
+                          </div>
+                          <!-- /.col -->
+                          <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                              <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                            </a>
+                          </div>
+                          <!-- /.col -->
+                          <div class="col-xs-3 gallery-item">
+                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                              <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                            </a>
+                          </div>
+                          <!-- /.col -->
+                        </div> <!--/.row  -->
+                      </div> <!-- /.container -->
+                    </div> <!-- /.gallery -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
   <!-- ALL SHOOK UP -->
   <hr class="featurette-divider">
@@ -270,37 +336,26 @@
           will make the public shed tears of laughter, along with the sound of
           hits like "Jailhouse Rock" and "Heartbreak Hotel".
         </p>
-        <div id="asu"><a>Gallery</a></div>
-        <div id="hasu">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse3">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse3" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Yan Hristov - Producer</p>
+               <p>Angelina Markova - Director</p>
+               <p>Violeta Petkova - Vocal Director</p>
+               <p>Anna Stoycheva - Vocal Director</p>
+               <p>Stanislav Kimchev - Assistant Director</p>
+               <p>Darya Bavykina - Choreographer</p>
+               <p>Baky Yegengeldiyev - Choreographer</p>
+               <p>Teodora Georgieva - Choreographer</p>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -308,6 +363,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+              <div class="row featurette project-containter container">
+                <div class="panel-gourp" style="position: relative">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <div id="asu"><a data-toggle="collapse">Gallery</a></div>
+                      </h4>
+                    </div>
+                    <div id="hasu" class="panel-collapse collapse">
+                      <div class="gallery">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-xs-3 gallery-item">
+                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                              <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                              </a>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xs-3 gallery-item">
+                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                              </a>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-xs-3 gallery-item">
+                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                              </a>
+                            </div>
+                            <!-- /.col -->
+                          </div> <!--/.row  -->
+                        </div> <!-- /.container -->
+                      </div> <!-- /.gallery -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
   <!-- MEMPHIS -->
   <hr class="featurette-divider">
@@ -326,37 +421,25 @@
           Bulgaria is the first amateur ensemble in the world to get the
           official rights for the recreation of the musical.
         </p>
-        <div id="memphis"><a>Gallery</a></div>
-        <div id="hmemphis" class="col-md-7 col-md-pull-9">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse4">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse4" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Svetlin Kozhuharov - Producer</p>
+               <p>Alexandra Egumenova - Director</p>
+               <p>Angelina Markova - Choreographer</p>
+               <p>Batyr Orazov - Choreographer</p>
+               <p>Nagima Iskakova - Choreographer</p>
+               <p>Gergana Petkova - Vocal Director</p>
+               <p>Violeta Petkova - Assistant Director</p>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5 col-md-pull-7">
@@ -364,6 +447,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                    <div class="row featurette project-containter container">
+                      <div class="panel-gourp" style="position: relative">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <div id="memphis"><a data-toggle="collapse">Gallery</a></div>
+                            </h4>
+                          </div>
+                          <div id="hmemphis" class="panel-collapse collapse">
+                            <div class="gallery">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xs-3 gallery-item">
+                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                    <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                    </a>
+                                  </div>
+                                  <!-- /.col -->
+                                  <div class="col-xs-3 gallery-item">
+                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                      <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                    </a>
+                                  </div>
+                                  <!-- /.col -->
+                                  <div class="col-xs-3 gallery-item">
+                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                      <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                    </a>
+                                  </div>
+                                  <!-- /.col -->
+                                </div> <!--/.row  -->
+                              </div> <!-- /.container -->
+                            </div> <!-- /.gallery -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
   <!-- GREASE -->
   <hr class="featurette-divider">
@@ -391,37 +514,22 @@
           gathering in itself one of the most popular hits of the 70s - this is
           "Grease"!
         </p>
-        <div id="grease"><a>Gallery</a></div>
-        <div id="hgrease">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" href="#collapse5">Creative Team</a>
+           </h4>
+         </div>
+         <div id="collapse5" class="panel-collapse collapse">
+           <div class="panel-body">
+             <p>Svetlin Kozhuharov - Producer</p>
+             <p>Alexandra Egumenova - Director</p>
+             <p>Maria Marinova - Choreographer</p>
+             <p>Skerdi Buhri - Choreographer</p>
+             <p>Nagima Iskakova - Choreographer</p>
+             <p>Gergana Petkova - Vocal Director</p>
+           </div>
+         </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -429,6 +537,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                      <div class="row featurette project-containter container">
+                        <div class="panel-gourp" style="position: relative">
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <div id="grease"><a data-toggle="collapse">Gallery</a></div>
+                              </h4>
+                            </div>
+                            <div id="hgrease" class="panel-collapse collapse">
+                              <div class="gallery">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-xs-3 gallery-item">
+                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                      </a>
+                                    </div>
+                                    <!-- /.col -->
+                                    <div class="col-xs-3 gallery-item">
+                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                      </a>
+                                    </div>
+                                    <!-- /.col -->
+                                    <div class="col-xs-3 gallery-item">
+                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                      </a>
+                                    </div>
+                                    <!-- /.col -->
+                                  </div> <!--/.row  -->
+                                </div> <!-- /.container -->
+                              </div> <!-- /.gallery -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
   <!-- MOULIN ROUGE -->
   <hr class="featurette-divider">
@@ -454,37 +602,26 @@
           movie is based on the tragic story of Giuseppe Verdi's opera "La
           Traviata". It was nominated for eight Oscars and won two.
         </p>
-        <div id="mr"><a>Gallery</a></div>
-        <div id="hmr" class="col-md-7 col-md-pull-9">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse6">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse6" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Rafayel Khachatryan - Producer</p>
+               <p>Georgi Jan Petrov - Director</p>
+               <p>Lacey Cope - Choreographer</p>
+               <p>Skerdi Buhri - Choreographer</p>
+               <p>Mariana Varbanova - Choreographer</p>
+               <p>Alexandra Engumenova - Vocal Coach</p>
+               <p>Gergana Petkova - Vocal Coach</p>
+               <p>Levon Manukyan</p>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5 col-md-pull-7">
@@ -492,6 +629,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                            <div class="row featurette project-containter container">
+                              <div class="panel-gourp" style="position: relative">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                      <div id="mr"><a data-toggle="collapse">Gallery</a></div>
+                                    </h4>
+                                  </div>
+                                  <div id="hmr" class="panel-collapse collapse">
+                                    <div class="gallery">
+                                      <div class="container">
+                                        <div class="row">
+                                          <div class="col-xs-3 gallery-item">
+                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                            <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                            </a>
+                                          </div>
+                                          <!-- /.col -->
+                                          <div class="col-xs-3 gallery-item">
+                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                              <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                            </a>
+                                          </div>
+                                          <!-- /.col -->
+                                          <div class="col-xs-3 gallery-item">
+                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                              <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                            </a>
+                                          </div>
+                                          <!-- /.col -->
+                                        </div> <!--/.row  -->
+                                      </div> <!-- /.container -->
+                                    </div> <!-- /.gallery -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
   <!-- HAIRSPRAY -->
   <hr class="featurette-divider">
@@ -518,37 +695,21 @@
           wild dance, manages always to make its audience cry of laughter, no
           matter whether in front of the big screen or in the theater.
         </p>
-        <div id="hairspray"><a>Gallery</a></div>
-        <div id="hhairspray">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" href="#collapse7">Creative Team</a>
+           </h4>
+         </div>
+         <div id="collapse7" class="panel-collapse collapse">
+           <div class="panel-body">
+             <p>Rafayel Khachatryan - Producer</p>
+             <p>Georgi Jan Petrov - Director</p>
+             <p>Antoni Stoyanov - Choreographer</p>
+             <p>Katerina Lovtchina - Choreographer</p>
+             <p>Regina Sadikova - Choreographer</p>
+           </div>
+         </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -556,6 +717,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                              <div class="row featurette project-containter container">
+                                <div class="panel-gourp" style="position: relative">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <div id="hairspray"><a data-toggle="collapse">Gallery</a></div>
+                                      </h4>
+                                    </div>
+                                    <div id="hhairspray" class="panel-collapse collapse">
+                                      <div class="gallery">
+                                        <div class="container">
+                                          <div class="row">
+                                            <div class="col-xs-3 gallery-item">
+                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                              <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                              </a>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-xs-3 gallery-item">
+                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                              </a>
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-xs-3 gallery-item">
+                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                              </a>
+                                            </div>
+                                            <!-- /.col -->
+                                          </div> <!--/.row  -->
+                                        </div> <!-- /.container -->
+                                      </div> <!-- /.gallery -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
 
   <!-- WEST SIDE STORY -->
   <hr class="featurette-divider">
@@ -576,37 +777,19 @@
           remains one of American musical theatre’s most revolutionary and most
           loved treasures.
         </p>
-        <div id="wss"><a>Gallery</a></div>
-        <div id="hwss" class="col-md-7 col-md-pull-9">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse8">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse8" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Rafayel Khachatryan - Producer</p>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5 col-md-pull-7">
@@ -614,6 +797,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                                    <div class="row featurette project-containter container">
+                                      <div class="panel-gourp" style="position: relative">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                              <div id="wss"><a data-toggle="collapse">Gallery</a></div>
+                                            </h4>
+                                          </div>
+                                          <div id="hwss" class="panel-collapse collapse">
+                                            <div class="gallery">
+                                              <div class="container">
+                                                <div class="row">
+                                                  <div class="col-xs-3 gallery-item">
+                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                    <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                                    </a>
+                                                  </div>
+                                                  <!-- /.col -->
+                                                  <div class="col-xs-3 gallery-item">
+                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                      <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                                    </a>
+                                                  </div>
+                                                  <!-- /.col -->
+                                                  <div class="col-xs-3 gallery-item">
+                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                      <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                                    </a>
+                                                  </div>
+                                                  <!-- /.col -->
+                                                </div> <!--/.row  -->
+                                              </div> <!-- /.container -->
+                                            </div> <!-- /.gallery -->
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
 
   <!-- CHICAGO -->
   <hr class="featurette-divider">
@@ -637,37 +860,17 @@
           addictive as gossip rags and as unforgettable as any trial of the
           century.
         </p>
-        <div id="chicago"><a>Gallery</a></div>
-        <div id="hchicago">
-          <div class="gallery">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                  <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                  </a>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-3 gallery-item">
-                  <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                    <img src="http://placehold.it/558x286&text=Fourth image" class="img-responsive img-gallery" alt="Fourth image">
-                  </a>
-                </div> <!-- /.col -->
-              </div> <!--/.row  -->
-            </div> <!-- /.container -->
-          </div> <!-- /.gallery -->
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" href="#collapse9">Creative Team</a>
+           </h4>
+         </div>
+         <div id="collapse9" class="panel-collapse collapse">
+           <div class="panel-body">
+             <p>Rafayel Khachatryan - Producer</p>
+           </div>
+         </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -675,6 +878,46 @@
       </div>
     </div>
   </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+                                      <div class="row featurette project-containter container">
+                                        <div class="panel-gourp" style="position: relative">
+                                          <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                              <h4 class="panel-title">
+                                                <div id="chicago"><a data-toggle="collapse">Gallery</a></div>
+                                              </h4>
+                                            </div>
+                                            <div id="hchicago" class="panel-collapse collapse">
+                                              <div class="gallery">
+                                                <div class="container">
+                                                  <div class="row">
+                                                    <div class="col-xs-3 gallery-item">
+                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                                                      </a>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-xs-3 gallery-item">
+                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                                                      </a>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                    <div class="col-xs-3 gallery-item">
+                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                                                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                                                      </a>
+                                                    </div>
+                                                    <!-- /.col -->
+                                                  </div> <!--/.row  -->
+                                                </div> <!-- /.container -->
+                                              </div> <!-- /.gallery -->
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
 
 <!-- /END THE FEATURETTES -->
 
