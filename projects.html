@@ -24,78 +24,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script>
-  $(document).ready(
-      function() {
-          $("#cmiyc").click(function() {
-              $("#hcmiyc").toggle();
-          });
-      });
-  </script>
-  <script>
-  $(document).ready(
-      function() {
-          $("#burlesque").click(function() {
-              $("#hburlesque").toggle();
-          });
-      });
-  </script>
-  <script>
-  $(document).ready(
-      function() {
-          $("#asu").click(function() {
-              $("#hasu").toggle();
-          });
-      });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#memphis").click(function() {
-                $("#hmemphis").toggle();
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#grease").click(function() {
-                $("#hgrease").toggle();
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#mr").click(function() {
-                $("#hmr").toggle();
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#hairspray").click(function() {
-                $("#hhairspray").toggle();
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#wss").click(function() {
-                $("#hwss").toggle();
-            });
-        });
-    </script>
-    <script>
-    $(document).ready(
-        function() {
-            $("#chicago").click(function() {
-                $("#hchicago").toggle();
-            });
-        });
-    </script>
 </head>
 <body>
 
@@ -190,15 +118,16 @@
       </div>
   <!-- Gallery -->
   <div class="container project-page">
-      <div class="row featurette project-containter container">
-        <div class="panel-gourp" style="position: relative">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title">
-                <div id="cmiyc"><a data-toggle="collapse">Gallery</a></div>
-              </h4>
-            </div>
-            <div id="hcmiyc" class="panel-collapse collapse">
+    <div class="row featurette project-containter container">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#cmiyc">Gallery</a>
+            </h4>
+          </div>
+          <div id="cmiyc" class="panel-collapse collapse">
+            <div class="panel-body">
               <div class="gallery">
                 <div class="container">
                   <div class="row">
@@ -228,6 +157,7 @@
         </div>
       </div>
     </div>
+  </div>
 
   <!-- BURLESQUE -->
   <hr class="featurette-divider">
@@ -281,44 +211,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-            <div class="row featurette project-containter container">
-              <div class="panel-gourp" style="position: relative">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <div id="burlesque"><a data-toggle="collapse">Gallery</a></div>
-                    </h4>
-                  </div>
-                  <div id="hburlesque" class="panel-collapse collapse">
-                    <div class="gallery">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-xs-3 gallery-item">
-                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                            <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                            </a>
-                          </div>
-                          <!-- /.col -->
-                          <div class="col-xs-3 gallery-item">
-                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                              <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                            </a>
-                          </div>
-                          <!-- /.col -->
-                          <div class="col-xs-3 gallery-item">
-                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                              <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                            </a>
-                          </div>
-                          <!-- /.col -->
-                        </div> <!--/.row  -->
-                      </div> <!-- /.container -->
-                    </div> <!-- /.gallery -->
-                  </div>
-                </div>
-              </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#burlesque">Gallery</a>
+            </h4>
+          </div>
+          <div id="burlesque" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ALL SHOOK UP -->
   <hr class="featurette-divider">
@@ -365,44 +297,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-              <div class="row featurette project-containter container">
-                <div class="panel-gourp" style="position: relative">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <div id="asu"><a data-toggle="collapse">Gallery</a></div>
-                      </h4>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#asu">Gallery</a>
+            </h4>
+          </div>
+          <div id="asu" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
                     </div>
-                    <div id="hasu" class="panel-collapse collapse">
-                      <div class="gallery">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-xs-3 gallery-item">
-                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                              <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                              </a>
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-xs-3 gallery-item">
-                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                              </a>
-                            </div>
-                            <!-- /.col -->
-                            <div class="col-xs-3 gallery-item">
-                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                              </a>
-                            </div>
-                            <!-- /.col -->
-                          </div> <!--/.row  -->
-                        </div> <!-- /.container -->
-                      </div> <!-- /.gallery -->
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
                     </div>
-                  </div>
-                </div>
-              </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- MEMPHIS -->
   <hr class="featurette-divider">
@@ -449,44 +383,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                    <div class="row featurette project-containter container">
-                      <div class="panel-gourp" style="position: relative">
-                        <div class="panel panel-default">
-                          <div class="panel-heading">
-                            <h4 class="panel-title">
-                              <div id="memphis"><a data-toggle="collapse">Gallery</a></div>
-                            </h4>
-                          </div>
-                          <div id="hmemphis" class="panel-collapse collapse">
-                            <div class="gallery">
-                              <div class="container">
-                                <div class="row">
-                                  <div class="col-xs-3 gallery-item">
-                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                    <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                    </a>
-                                  </div>
-                                  <!-- /.col -->
-                                  <div class="col-xs-3 gallery-item">
-                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                      <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                    </a>
-                                  </div>
-                                  <!-- /.col -->
-                                  <div class="col-xs-3 gallery-item">
-                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                      <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                    </a>
-                                  </div>
-                                  <!-- /.col -->
-                                </div> <!--/.row  -->
-                              </div> <!-- /.container -->
-                            </div> <!-- /.gallery -->
-                          </div>
-                        </div>
-                      </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#memphis">Gallery</a>
+            </h4>
+          </div>
+          <div id="memphis" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
                     </div>
-                  </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- GREASE -->
   <hr class="featurette-divider">
@@ -539,44 +475,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                      <div class="row featurette project-containter container">
-                        <div class="panel-gourp" style="position: relative">
-                          <div class="panel panel-default">
-                            <div class="panel-heading">
-                              <h4 class="panel-title">
-                                <div id="grease"><a data-toggle="collapse">Gallery</a></div>
-                              </h4>
-                            </div>
-                            <div id="hgrease" class="panel-collapse collapse">
-                              <div class="gallery">
-                                <div class="container">
-                                  <div class="row">
-                                    <div class="col-xs-3 gallery-item">
-                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                      </a>
-                                    </div>
-                                    <!-- /.col -->
-                                    <div class="col-xs-3 gallery-item">
-                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                      </a>
-                                    </div>
-                                    <!-- /.col -->
-                                    <div class="col-xs-3 gallery-item">
-                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                      </a>
-                                    </div>
-                                    <!-- /.col -->
-                                  </div> <!--/.row  -->
-                                </div> <!-- /.container -->
-                              </div> <!-- /.gallery -->
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#grease">Gallery</a>
+            </h4>
+          </div>
+          <div id="grease" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
                     </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- MOULIN ROUGE -->
   <hr class="featurette-divider">
@@ -631,44 +569,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                            <div class="row featurette project-containter container">
-                              <div class="panel-gourp" style="position: relative">
-                                <div class="panel panel-default">
-                                  <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                      <div id="mr"><a data-toggle="collapse">Gallery</a></div>
-                                    </h4>
-                                  </div>
-                                  <div id="hmr" class="panel-collapse collapse">
-                                    <div class="gallery">
-                                      <div class="container">
-                                        <div class="row">
-                                          <div class="col-xs-3 gallery-item">
-                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                            <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                            </a>
-                                          </div>
-                                          <!-- /.col -->
-                                          <div class="col-xs-3 gallery-item">
-                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                              <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                            </a>
-                                          </div>
-                                          <!-- /.col -->
-                                          <div class="col-xs-3 gallery-item">
-                                            <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                              <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                            </a>
-                                          </div>
-                                          <!-- /.col -->
-                                        </div> <!--/.row  -->
-                                      </div> <!-- /.container -->
-                                    </div> <!-- /.gallery -->
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#mr">Gallery</a>
+            </h4>
+          </div>
+          <div id="mr" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- HAIRSPRAY -->
   <hr class="featurette-divider">
@@ -719,44 +659,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                              <div class="row featurette project-containter container">
-                                <div class="panel-gourp" style="position: relative">
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                      <h4 class="panel-title">
-                                        <div id="hairspray"><a data-toggle="collapse">Gallery</a></div>
-                                      </h4>
-                                    </div>
-                                    <div id="hhairspray" class="panel-collapse collapse">
-                                      <div class="gallery">
-                                        <div class="container">
-                                          <div class="row">
-                                            <div class="col-xs-3 gallery-item">
-                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                              <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                              </a>
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-xs-3 gallery-item">
-                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                              </a>
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-xs-3 gallery-item">
-                                              <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                              </a>
-                                            </div>
-                                            <!-- /.col -->
-                                          </div> <!--/.row  -->
-                                        </div> <!-- /.container -->
-                                      </div> <!-- /.gallery -->
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#hairspray">Gallery</a>
+            </h4>
+          </div>
+          <div id="hairspray" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- WEST SIDE STORY -->
   <hr class="featurette-divider">
@@ -799,44 +741,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                                    <div class="row featurette project-containter container">
-                                      <div class="panel-gourp" style="position: relative">
-                                        <div class="panel panel-default">
-                                          <div class="panel-heading">
-                                            <h4 class="panel-title">
-                                              <div id="wss"><a data-toggle="collapse">Gallery</a></div>
-                                            </h4>
-                                          </div>
-                                          <div id="hwss" class="panel-collapse collapse">
-                                            <div class="gallery">
-                                              <div class="container">
-                                                <div class="row">
-                                                  <div class="col-xs-3 gallery-item">
-                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                    <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                                    </a>
-                                                  </div>
-                                                  <!-- /.col -->
-                                                  <div class="col-xs-3 gallery-item">
-                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                      <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                                    </a>
-                                                  </div>
-                                                  <!-- /.col -->
-                                                  <div class="col-xs-3 gallery-item">
-                                                    <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                      <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                                    </a>
-                                                  </div>
-                                                  <!-- /.col -->
-                                                </div> <!--/.row  -->
-                                              </div> <!-- /.container -->
-                                            </div> <!-- /.gallery -->
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#wss">Gallery</a>
+            </h4>
+          </div>
+          <div id="wss" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- CHICAGO -->
   <hr class="featurette-divider">
@@ -880,44 +824,46 @@
   </div>
   <!-- Gallery -->
   <div class="container project-page">
-                                      <div class="row featurette project-containter container">
-                                        <div class="panel-gourp" style="position: relative">
-                                          <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                              <h4 class="panel-title">
-                                                <div id="chicago"><a data-toggle="collapse">Gallery</a></div>
-                                              </h4>
-                                            </div>
-                                            <div id="hchicago" class="panel-collapse collapse">
-                                              <div class="gallery">
-                                                <div class="container">
-                                                  <div class="row">
-                                                    <div class="col-xs-3 gallery-item">
-                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
-                                                      </a>
-                                                    </div>
-                                                    <!-- /.col -->
-                                                    <div class="col-xs-3 gallery-item">
-                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
-                                                      </a>
-                                                    </div>
-                                                    <!-- /.col -->
-                                                    <div class="col-xs-3 gallery-item">
-                                                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                                                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
-                                                      </a>
-                                                    </div>
-                                                    <!-- /.col -->
-                                                  </div> <!--/.row  -->
-                                                </div> <!-- /.container -->
-                                              </div> <!-- /.gallery -->
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#chicago">Gallery</a>
+            </h4>
+          </div>
+          <div id="chicago" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="http://placehold.it/558x286&text=First image" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Second image" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="http://placehold.it/558x286&text=Third image" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- /END THE FEATURETTES -->
 

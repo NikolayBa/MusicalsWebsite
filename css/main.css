@@ -36,35 +36,7 @@ a.hideLink {
 .col-flex{
   flex: 1;
 }
-#hgrease{
-  display: none;
-}
-#hcmiyc{
-  display: none;
-}
-#hasu {
-    display: none;
-}
 
-#hmemphis {
-    display: none;
-}
-#hburlesque {
-  margin-top: 100px;
-  display: none;
-}
-#hmr{
-  display: none;
-}
-#hhairspray{
-  display: none;
-}
-#hwss{
-  display: none;
-}
-#hchicago{
-  display: none;
-}
 .container{
   overflow: hidden;
 }
@@ -72,8 +44,7 @@ a.hideLink {
   height: 100%;
 }
 .gallery{
-    margin-top: 40px;
-
+    margin-top: 20px;
 }
 .gallery-item{
 	margin-bottom: 30px;
