@@ -8,13 +8,13 @@
 
   <title>AUBG Musical</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS and JS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- Font-Awesome CSS -->
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS and JS-->
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/lib1.css">
   <link rel="stylesheet" href="css/fontana.css">
@@ -23,6 +23,86 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('.link-gallery').click(function(){
+  		var galleryId = $(this).attr('data-target');
+  		var currentLinkIndex = $(this).index('a[data-target="'+ galleryId +'"]');
+
+  		createGallery(galleryId, currentLinkIndex);
+  		createPagination(galleryId, currentLinkIndex);
+
+  		$(galleryId).on('hidden.bs.modal', function (){
+  			destroyGallry(galleryId);
+  			destroyPagination(galleryId);
+  		});
+
+  		$(galleryId +' .carousel').on('slid.bs.carousel', function (){
+  			var currentSlide = $(galleryId +' .carousel .item.active');
+  			var currentSlideIndex = currentSlide.index(galleryId +' .carousel .item');
+
+  			setTitle(galleryId, currentSlideIndex);
+  			setPagination(++currentSlideIndex, true);
+  		})
+  	});
+
+  	function createGallery(galleryId, currentSlideIndex){
+  		var galleryBox = $(galleryId + ' .carousel-inner');
+
+  		$('a[data-target="'+ galleryId +'"]').each(function(){
+  			var img = $(this).html();
+  			var galleryItem = $('<div class="item">'+ img +'</div>');
+
+  			galleryItem.appendTo(galleryBox);
+  		});
+
+  		galleryBox.children('.item').eq(currentSlideIndex).addClass('active');
+  		setTitle(galleryId, currentSlideIndex);
+  	}
+
+  	function destroyGallry(galleryId){
+  		$(galleryId + ' .carousel-inner').html("");
+  	}
+
+  	function createPagination(galleryId, currentSlideIndex){
+  		var pagination = $(galleryId + ' .pagination');
+  		var carouselId = $(galleryId).find('.carousel').attr('id');
+  		var prevLink = $('<li><a href="#'+ carouselId +'" data-slide="prev">«</a></li>');
+  		var nextLink = $('<li><a href="#'+ carouselId +'" data-slide="next">»</a></li>');
+
+  		prevLink.appendTo(pagination);
+  		nextLink.appendTo(pagination);
+
+  		$('a[data-target="'+ galleryId +'"]').each(function(){
+  			var linkIndex = $(this).index('a[data-target="'+ galleryId +'"]');
+  			var paginationLink = $('<li><a data-target="#carouselGallery" data-slide-to="'+ linkIndex +'">'+ (linkIndex+1) +'</a></li>');
+
+  			paginationLink.insertBefore('.pagination li:last-child');
+  		});
+
+  		setPagination(++currentSlideIndex);
+  	}
+
+  	function setPagination(currentSlideIndex, reset = false){
+  		if (reset){
+  			$('.pagination li').removeClass('active');
+  		}
+
+  		$('.pagination li').eq(currentSlideIndex).addClass('active');
+  	}
+
+  	function destroyPagination(galleryId){
+  		$(galleryId + ' .pagination').html("");
+  	}
+
+  	function setTitle(galleryId, currentSlideIndex){
+  		var imgAlt = $(galleryId + ' .item').eq(currentSlideIndex).find('img').attr('alt');
+
+  		$('.modal-title').text(imgAlt);
+  	}
+  });
+  </script>
+
 
 </head>
 <body>
@@ -84,11 +164,11 @@
             Catch Me If You Can is with a book by Terrence McNally and score Marc
             Shaiman and Scott Wittman (Hairspray).
           </p>
-          <div class="panel-group">
+          <div class="panel-group" id="cmiyc-accordion">
             <div class="panel panel-default">
              <div class="panel-heading">
                <h4 class="panel-title">
-                 <a data-toggle="collapse" href="#collapse1">Creative Team</a>
+                 <a data-toggle="collapse" data-parent="#cmiyc-accordion" href="#collapse1">Creative Team</a>
                </h4>
              </div>
              <div id="collapse1" class="panel-collapse collapse">
@@ -108,6 +188,20 @@
                  <p>Martin Georgiev - Marketing Manager</p>
                </div>
              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle='collapse' href="#collapse1-1">Articles</a>
+                </h4>
+              </div>
+              <div id="collapse1-1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p><a href="http://hotnews.bg/n/studenti-ot-aub-na-turne-v-bulgariya-s-broduejska-produktsiya.108101.html">With Broadway production students embark on a tour in Bulgaria - Hotnews.bg</a></p>
+                  <p><a href="http://www.bitelevision.com/kulturno-myuzikal-po-amerikanski-universitet/">Catch me, if you can - BIT</a></p>
+                  <p><a href="http://www.bta.bg/bg/c/BO/id/1298007">Students tour Bulgaria to perform Broadway musical - BTA</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -152,6 +246,22 @@
                   </div> <!--/.row  -->
                 </div> <!-- /.container -->
               </div> <!-- /.gallery -->
+              <div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+                    </div> <!-- /.modal-header -->
+                    <div class="modal-body">
+                      <div id="carouselGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                        </div> <!-- /.carousel-inner -->
+                      </div> <!-- /.carousel -->
+                    </div> <!-- /.modal-body -->
+                  </div> <!-- /.modal-content -->
+                </div> <!-- /.modal-dialog -->
+              </div> <!-- /.modal -->
             </div>
           </div>
         </div>
@@ -180,11 +290,11 @@
           a dramatic turn though when Ali's big voice makes her become the main
           attraction of the revue.
         </p>
-        <div class="panel-group">
+        <div class="panel-group" id="burlesque-accrodion">
           <div class="panel panel-default">
            <div class="panel-heading">
              <h4 class="panel-title">
-               <a data-toggle="collapse" href="#collapse2">Creative Team</a>
+               <a data-toggle="collapse" data-parent="#burlesque-accordion"href="#collapse2">Creative Team</a>
              </h4>
            </div>
            <div id="collapse2" class="panel-collapse collapse">
@@ -201,6 +311,20 @@
                <p>Anna Stoycheva - Vocal Director</p>
              </div>
            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse2-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse2-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.standartnews.com/regionalni/myuzikal_na_aub_s_premiera_v_blagoevgrad-277874.html">StandartNews</a></p>
+                <p><a href="http://infomreja.bg/centyr-za-vizualni-i-scenichni-izkustva-otvarq-vrati-tazi-vecher-v-aub-22547.html">Infomreja.bg</a></p>
+                <p><a href="http://www.bta.bg/bg/c/BO/id/1042447">BTA</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -268,11 +392,11 @@
           will make the public shed tears of laughter, along with the sound of
           hits like "Jailhouse Rock" and "Heartbreak Hotel".
         </p>
-        <div class="panel-group">
+        <div class="panel-group" id="asu-accordion">
           <div class="panel panel-default">
            <div class="panel-heading">
              <h4 class="panel-title">
-               <a data-toggle="collapse" href="#collapse3">Creative Team</a>
+               <a data-toggle="collapse" data-parent="#asu-accrodion" href="#collapse3">Creative Team</a>
              </h4>
            </div>
            <div id="collapse3" class="panel-collapse collapse">
@@ -288,6 +412,19 @@
              </div>
            </div>
           </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse3-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse3-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.blagoevgrad.eu/all-shook-up.html">Blagoevgrad.eu</a></p>
+                <p><a href="https://goo.gl/KbVOo2">Studyabroad.bg</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -298,7 +435,7 @@
   <!-- Gallery -->
   <div class="container project-page">
     <div class="row featurette project-containter container">
-      <div class="panel-gourp" style="position: relative">
+      <div class="panel-gourp" >
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -355,7 +492,7 @@
           Bulgaria is the first amateur ensemble in the world to get the
           official rights for the recreation of the musical.
         </p>
-        <div class="panel-group">
+        <div class="panel-group" id="memphis-accorcion">
           <div class="panel panel-default">
            <div class="panel-heading">
              <h4 class="panel-title">
@@ -373,6 +510,21 @@
                <p>Violeta Petkova - Assistant Director</p>
              </div>
            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' data-parent="#memphis-accordion" href="#collapse4-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse4-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://infomreja.bg/miuzikylyt-memfis-s-debiut-v-bylgariq-zasluga-na-studenti-ot-aub-11003.html">Infomreja.bg</a></p>
+                <p><a href="http://nakratko.bg/category/58/6884">Nakratko.bg</a></p>
+                <p><a href="http://www.blagoevgrad.eu/myuzikalat-memfis-za-parvi-pat-v-bal.html">Blagoevgrad.eu</a></p>
+                <p><a href="http://www.gramofona.com/video/myuzikalat-memfis-idva-i-v-burgas-muzikata-na-levon-manukyan">Gramofona.com</a></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -429,7 +581,7 @@
   <div class="container">
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">GREASE (2012)</h2>
+        <h2 class="project-containter">GREASE (2012)</h2>
         <p>Your favorite songs in one place - Summer Nights, Greased Lightning,
           We Go Together, Born to Hand Jive, Beauty School Dropout and many others.
           "Grease" (Grease) is familiar to viewers from the Oscar-nominated film
@@ -450,22 +602,36 @@
           gathering in itself one of the most popular hits of the 70s - this is
           "Grease"!
         </p>
-        <div class="panel panel-default">
-         <div class="panel-heading">
-           <h4 class="panel-title">
-             <a data-toggle="collapse" href="#collapse5">Creative Team</a>
-           </h4>
-         </div>
-         <div id="collapse5" class="panel-collapse collapse">
-           <div class="panel-body">
-             <p>Svetlin Kozhuharov - Producer</p>
-             <p>Alexandra Egumenova - Director</p>
-             <p>Maria Marinova - Choreographer</p>
-             <p>Skerdi Buhri - Choreographer</p>
-             <p>Nagima Iskakova - Choreographer</p>
-             <p>Gergana Petkova - Vocal Director</p>
-           </div>
-         </div>
+        <div class="panel-group" id="grease-accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#grease-accordion" href="#collapse5">Creative Team</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Svetlin Kozhuharov - Producer</p>
+                <p>Alexandra Egumenova - Director</p>
+                <p>Maria Marinova - Choreographer</p>
+                <p>Skerdi Buhri - Choreographer</p>
+                <p>Nagima Iskakova - Choreographer</p>
+                <p>Gergana Petkova - Vocal Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse5-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse5-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.moreto.net/events.php?n=167776">Moreto.net</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-md-5">
@@ -540,7 +706,7 @@
           movie is based on the tragic story of Giuseppe Verdi's opera "La
           Traviata". It was nominated for eight Oscars and won two.
         </p>
-        <div class="panel-group">
+        <div class="panel-group" id="mr-accordion">
           <div class="panel panel-default">
            <div class="panel-heading">
              <h4 class="panel-title">
@@ -559,6 +725,19 @@
                <p>Levon Manukyan</p>
              </div>
            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle='collapse' href="#collapse6-1">Articles</a>
+            </h4>
+          </div>
+          <div id="collapse6-1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p><a href="http://dariknews.bg/view_article.php?article_id=688868">Dariknews.bg</a></p>
+              <p><a href="https://www.plovdiv24.bg/novini/interesno/Studenti-ot-Amerikanskiya-predstavyat-Mulen-ruzh-v-Plovdiv-240614">Provdiv24.bg</a></p>
+            </div>
           </div>
         </div>
       </div>
