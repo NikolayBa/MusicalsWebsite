@@ -129,7 +129,6 @@
     </ul>
   </div>
 
-
 <!-- Navbar on small screens -->
 <div id="navDemo" class="ynnenu-hide ynnenu-hide-large ynnenu-hide-medium ynnenu-top" style="margin-top:46px">
   <ul class="ynnenu-navbar ynnenu-left-align ynnenu-black">
@@ -146,6 +145,7 @@
 
   <!-- CATCH ME IF YOU CAN -->
   <hr class="featurette-divider">
+
   <div class="container">
       <div class="row featurette">
         <div class="col-md-7">
@@ -226,13 +226,13 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xs-3 gallery-item">
-                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                      <img src="assets/img/cmiyc1.jpg" class="img-responsive img-gallery" alt="First image">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/cmiyc1.jpg" class="img-responsive img-gallery" alt="First image">
                       </a>
                     </div>
                     <!-- /.col -->
                     <div class="col-xs-3 gallery-item">
-                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
                         <img src="assets/img/cmiyc2.jpg" class="img-responsive img-gallery" alt="Second image">
                       </a>
                     </div>
@@ -333,8 +333,8 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-xs-3 gallery-item">
-                      <a href="#galleryImg4" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
-                      <img src="assets/img/burlesque1.jpg" class="img-responsive img-gallery" alt="Fourth image">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/burlesque1.jpg" class="img-responsive img-gallery" alt="Fourth image">
                       </a>
                     </div>
                     <!-- /.col -->
@@ -416,6 +416,18 @@
       </div>
     </div>
   </div>
+
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Gallery -->
   <div class="container project-page">
     <div class="row featurette project-containter container">
@@ -985,6 +997,23 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+        </div> <!-- /.modal-header -->
+
+        <div class="modal-body">
+          <div id="carouselGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+            </div> <!-- /.carousel-inner -->
+          </div> <!-- /.carousel -->
+        </div> <!-- /.modal-body -->
+      </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
 
 <!-- /END THE FEATURETTES -->
 
@@ -993,5 +1022,6 @@
   <footer class="ynnenu-container ynnenu-padding-64 ynnenu-center  ynnenu-light-grey ynnenu-xlarge">
     <p class="ynnenu-medium"> Broadway Performance Club</p>
   </footer>
+</div>
 </body>
 </html>
