@@ -8,17 +8,102 @@
 
   <title>AUBG Musical</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS and JS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- Font-Awesome CSS -->
   <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS and JS-->
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/lib1.css">
   <link rel="stylesheet" href="css/fontana.css">
   <link rel="stylesheet" href="css/font.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('.link-gallery').click(function(){
+  		var galleryId = $(this).attr('data-target');
+  		var currentLinkIndex = $(this).index('a[data-target="'+ galleryId +'"]');
+
+  		createGallery(galleryId, currentLinkIndex);
+  		createPagination(galleryId, currentLinkIndex);
+
+  		$(galleryId).on('hidden.bs.modal', function (){
+  			destroyGallry(galleryId);
+  			destroyPagination(galleryId);
+  		});
+
+  		$(galleryId +' .carousel').on('slid.bs.carousel', function (){
+  			var currentSlide = $(galleryId +' .carousel .item.active');
+  			var currentSlideIndex = currentSlide.index(galleryId +' .carousel .item');
+
+  			setTitle(galleryId, currentSlideIndex);
+  			setPagination(++currentSlideIndex, true);
+  		})
+  	});
+
+  	function createGallery(galleryId, currentSlideIndex){
+  		var galleryBox = $(galleryId + ' .carousel-inner');
+
+  		$('a[data-target="'+ galleryId +'"]').each(function(){
+  			var img = $(this).html();
+  			var galleryItem = $('<div class="item">'+ img +'</div>');
+
+  			galleryItem.appendTo(galleryBox);
+  		});
+
+  		galleryBox.children('.item').eq(currentSlideIndex).addClass('active');
+  		setTitle(galleryId, currentSlideIndex);
+  	}
+
+  	function destroyGallry(galleryId){
+  		$(galleryId + ' .carousel-inner').html("");
+  	}
+
+  	function createPagination(galleryId, currentSlideIndex){
+  		var pagination = $(galleryId + ' .pagination');
+  		var carouselId = $(galleryId).find('.carousel').attr('id');
+  		var prevLink = $('<li><a href="#'+ carouselId +'" data-slide="prev">«</a></li>');
+  		var nextLink = $('<li><a href="#'+ carouselId +'" data-slide="next">»</a></li>');
+
+  		prevLink.appendTo(pagination);
+  		nextLink.appendTo(pagination);
+
+  		$('a[data-target="'+ galleryId +'"]').each(function(){
+  			var linkIndex = $(this).index('a[data-target="'+ galleryId +'"]');
+  			var paginationLink = $('<li><a data-target="#carouselGallery" data-slide-to="'+ linkIndex +'">'+ (linkIndex+1) +'</a></li>');
+
+  			paginationLink.insertBefore('.pagination li:last-child');
+  		});
+
+  		setPagination(++currentSlideIndex);
+  	}
+
+  	function setPagination(currentSlideIndex, reset = false){
+  		if (reset){
+  			$('.pagination li').removeClass('active');
+  		}
+
+  		$('.pagination li').eq(currentSlideIndex).addClass('active');
+  	}
+
+  	function destroyPagination(galleryId){
+  		$(galleryId + ' .pagination').html("");
+  	}
+
+  	function setTitle(galleryId, currentSlideIndex){
+  		var imgAlt = $(galleryId + ' .item').eq(currentSlideIndex).find('img').attr('alt');
+
+  		$('.modal-title').text(imgAlt);
+  	}
+  });
+  </script>
+
+
 </head>
 <body>
 
@@ -29,7 +114,7 @@
       <li class="ynnenu-hide-medium ynnenu-hide-large ynnenu-opennav ynnenu-right">
       <li><a href="index.html" class="ynnenu-hover-none ynnenu-hover-text-grey ynnenu-padding-large"><img src="assets/img/b.png" height="40px" width="40px"</img></a></li>
       <li class="ynnenu-hide-small ynnenu-dropdown-hover"><a href="organizers.html" class="ynnenu-padding-large">CAST</i> </a>
-    
+
       </li>
       <li class="ynnenu-hide-small"><a href="about.html" class="ynnenu-padding-large">ABOUT US</a></li>
       <li class="ynnenu-hide-small"><a href="contact.html" class="ynnenu-padding-large">CONTACT US</a></li>
@@ -43,7 +128,6 @@
       <li class="ynnenu-hide-small ynnenu-right"><a href="javascript:void(0)" class="ynnenu-padding-large ynnenu-hover-red"><i class="fa fa-search"></i></a></li>
     </ul>
   </div>
-
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="ynnenu-hide ynnenu-hide-large ynnenu-hide-medium ynnenu-top" style="margin-top:46px">
@@ -59,49 +143,877 @@
 
 <!-- START THE FEATURETTES -->
 
-<hr class="featurette-divider">
-<div class="container project-page">
-  <div class="row featurette project-containter">
-    <div class="col-md-7">
-        <h2 class="featurette-heading">CATCH ME IF YOU CAN (2016)</h2>
-        <p>Seeking fame and fortune, curious teenager Frank Abagnale. Jr. runs away from home to begin an unforgettable adventure. With nothing more than his boyish charm, a big imagination and millions of dollars in forged checks, Frank successfully poses as a pilot, a doctor and a lawyer. He's living the high life and is about to win the girl of his dreams. But when Frank's lies catch the attention of FBI agent Carl Hanratty, Carl pursues Frank across the country to make him pay for his crimes
-  Based on the hit film and the incredible true story, Catch Me If You Can, is the high-flying musical comedy about chasing your dreams and not getting caught. Nominated for 4 Tony awards, including Best Musical, Catch Me If You Can is with a book by Terrence McNally and score Marc Shaiman and Scott Wittman (Hairspray).
-    </p>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" src="assets/img/cmiyc.jpg" alt="Generic placeholder image">
-      </div>
-    </div>
- </div>
-
+  <!-- CATCH ME IF YOU CAN -->
   <hr class="featurette-divider">
 
   <div class="container">
-    <div class="row featurette project-containter">
-      <div class="col-md-7 col-md-push-5">
-        <h2 class="featurette-heading project-containter">BURLESQUE (2015)</h2>
-        <p>The Burlesque Lounge has its best days behind it. Tess (played by Cher), a retired dancer and owner of the venue, struggles to keep the aging theater alive, facing all kinds of financial and artistic challenges. With the Lounge's troupe members becoming increasingly distracted by personal problems and a threat coming from a wealthy businessman's quest to buy the spot from Tess, the good fortune seems to have abandoned the club altogether. Meanwhile, the life of Ali (played by Christina Aguilera, a small-town girl from Iowa, is about to change dramatically. Hired by Tess as a waitress at the Lounge, Ali escapes a hollow past and quickly falls in love with the art of burlesque. Backed by newfound friends amongst the theater's crew, she manages to fulfill her dreams of being on stage herself. Things take a dramatic turn though when Ali's big voice makes her become the main attraction of the revue.</p>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="project-containter">CATCH ME IF YOU CAN (2016)</h2>
+          <p>Seeking fame and fortune, curious teenager Frank Abagnale. Jr. runs
+            away from home to begin an unforgettable adventure. With nothing more
+            than his boyish charm, a big imagination and millions of dollars in
+            forged checks, Frank successfully poses as a pilot, a doctor and a
+            lawyer. He's living the high life and is about to win the girl of his
+            dreams. But when Frank's lies catch the attention of FBI agent Carl
+            Hanratty, Carl pursues Frank across the country to make him pay for
+            his crimes.
+            Based on the hit film and the incredible true story, Catch Me If You
+            Can, is the high-flying musical comedy about chasing your dreams and
+            not getting caught. Nominated for 4 Tony awards, including Best Musical,
+            Catch Me If You Can is with a book by Terrence McNally and score Marc
+            Shaiman and Scott Wittman (Hairspray).
+          </p>
+          <div class="panel-group" id="cmiyc-accordion">
+            <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#cmiyc-accordion" href="#collapse1">Creative Team</a>
+               </h4>
+             </div>
+             <div id="collapse1" class="panel-collapse collapse">
+               <div class="panel-body">
+                 <p>Lora Dineva - Producer</p>
+                 <p>Anna Stoycheva - Director</p>
+                 <p>Sofia Volkhonskaya - Assistant Director</p>
+                 <p>Stanislav Kimchev - Assistant Director</p>
+                 <p>Stefan Chilingirov - Assistant Director</p>
+                 <p>Aman Kutmanbekov - Choreographer</p>
+                 <p>Darya Bavykina - Choreographer</p>
+                 <p>Teodora Georgieva - Choreographer</p>
+                 <p>Zurab Pertsuliani - Choreographer</p>
+                 <p>Tsvetiana Zaharieva - Stage Manager</p>
+                 <p>Gergana Velichkova - Vocal Director</p>
+                 <p>Denitsa Hristova - Assistant Producer</p>
+                 <p>Martin Georgiev - Marketing Manager</p>
+               </div>
+             </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle='collapse' href="#collapse1-1">Articles</a>
+                </h4>
+              </div>
+              <div id="collapse1-1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p><a href="http://hotnews.bg/n/studenti-ot-aub-na-turne-v-bulgariya-s-broduejska-produktsiya.108101.html">With Broadway production students embark on a tour in Bulgaria - Hotnews.bg</a></p>
+                  <p><a href="http://www.bitelevision.com/kulturno-myuzikal-po-amerikanski-universitet/">Catch me, if you can - BIT</a></p>
+                  <p><a href="http://www.bta.bg/bg/c/BO/id/1298007">Students tour Bulgaria to perform Broadway musical - BTA</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-responsive center-block" src="assets/img/cmiyc.jpg" alt="Generic placeholder image">
+          </div>
+        </div>
       </div>
-      <div class="col-md-5 col-md-pull-7">
-        <img class="featurette-image img-responsive center-block" src="assets/img/burlesque.jpg" alt="Generic placeholder image">
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#cmiyc">Gallery</a>
+            </h4>
+          </div>
+          <div id="cmiyc" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/cmiyc1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/cmiyc2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/cmiyc3.jpg" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <hr class="featurette-divider">
+  <!-- BURLESQUE -->
+  <hr>
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="project-containter">BURLESQUE (2015)</h2>
+        <p>The Burlesque Lounge has its best days behind it. Tess (played by
+          Cher), a retired dancer and owner of the venue, struggles to keep the
+          aging theater alive, facing all kinds of financial and artistic
+          challenges. With the Lounge's troupe members becoming increasingly
+          distracted by personal problems and a threat coming from a wealthy
+          businessman's quest to buy the spot from Tess, the good fortune seems
+          to have abandoned the club altogether. Meanwhile, the life of Ali
+          (played by Christina Aguilera, a small-town girl from Iowa, is about
+          to change dramatically. Hired by Tess as a waitress at the Lounge,
+          Ali escapes a hollow past and quickly falls in love with the art of
+          burlesque. Backed by newfound friends amongst the theater's crew, she
+          manages to fulfill her dreams of being on stage herself. Things take
+          a dramatic turn though when Ali's big voice makes her become the main
+          attraction of the revue.
+        </p>
+        <div class="panel-group" id="burlesque-accrodion">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#burlesque-accordion"href="#collapse2">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse2" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Martin Georgiev - Producer</p>
+               <p>Angelina Markova - Director</p>
+               <p>Teodora Georgieva - Assistant Director, Choreographer</p>
+               <p>Tsvetiana Zaharieva - Assistant Director</p>
+               <p>Stanislav Kimchev - Assistant Director</p>
+               <p>Darya Bavykina - Choreographer</p>
+               <p>Yegor Ganin - Choreographer</p>
+               <p>Violeta Petkova - Choreographer</p>
+               <p>Violeta Petkova - Vocal Director</p>
+               <p>Anna Stoycheva - Vocal Director</p>
+             </div>
+           </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse2-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse2-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.standartnews.com/regionalni/myuzikal_na_aub_s_premiera_v_blagoevgrad-277874.html">StandartNews</a></p>
+                <p><a href="http://infomreja.bg/centyr-za-vizualni-i-scenichni-izkustva-otvarq-vrati-tazi-vecher-v-aub-22547.html">Infomreja.bg</a></p>
+                <p><a href="http://www.bta.bg/bg/c/BO/id/1042447">BTA</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img src="assets/img/burlesque.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#burlesque">Gallery</a>
+            </h4>
+          </div>
+          <div id="burlesque" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/burlesque1.jpg" class="img-responsive img-gallery" alt="Fourth image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg5" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/burlesque2.jpg" class="img-responsive img-gallery" alt="Fifth image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg6" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/burlesque3.jpg" class="img-responsive img-gallery" alt="Sixth image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- ALL SHOOK UP -->
+  <hr class="featurette-divider">
   <div class="container">
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">ALL SHOOK UP (2014)</h2>
-        <p>All Shook Up includes the famous songs of the King of Rock Elvis Presley, and is based on the comedy "Twelfth Night" by William Shakespeare. The musical takes place in a small town in the Central States, where loud music and public affection is prohibited by the conservative mayor. The town, however, is shaken when a young rocker stops there in search of a mechanic and manages to conquer the heart of local girl. What follows is a series of love misunderstandings that will make the public shed tears of laughter, along with the sound of hits like "Jailhouse Rock" and "Heartbreak Hotel".
-    </p>
+        <p>All Shook Up includes the famous songs of the King of Rock Elvis
+          Presley, and is based on the comedy "Twelfth Night" by William
+          Shakespeare. The musical takes place in a small town in the Central
+          States, where loud music and public affection is prohibited by the
+          conservative mayor. The town, however, is shaken when a young rocker
+          stops there in search of a mechanic and manages to conquer the heart
+          of local girl. What follows is a series of love misunderstandings that
+          will make the public shed tears of laughter, along with the sound of
+          hits like "Jailhouse Rock" and "Heartbreak Hotel".
+        </p>
+        <div class="panel-group" id="asu-accordion">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" data-parent="#asu-accrodion" href="#collapse3">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse3" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Yan Hristov - Producer</p>
+               <p>Angelina Markova - Director</p>
+               <p>Violeta Petkova - Vocal Director</p>
+               <p>Anna Stoycheva - Vocal Director</p>
+               <p>Stanislav Kimchev - Assistant Director</p>
+               <p>Darya Bavykina - Choreographer</p>
+               <p>Baky Yegengeldiyev - Choreographer</p>
+               <p>Teodora Georgieva - Choreographer</p>
+             </div>
+           </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse3-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse3-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.blagoevgrad.eu/all-shook-up.html">Blagoevgrad.eu</a></p>
+                <p><a href="https://goo.gl/KbVOo2">Studyabroad.bg</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-5">
-        <img class="featurette-image img-responsive center-block" src="assets/img/asu.jpg" alt="Generic placeholder image">
+        <img class="center-block" src="assets/img/asu.jpg" alt="Generic placeholder image">
       </div>
     </div>
   </div>
+
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview" style="width: 100%;" >
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" >
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#asu">Gallery</a>
+            </h4>
+          </div>
+          <div id="asu" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/asu1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/asu2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/asu3.jpg" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEMPHIS -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading project-containter">MEMPHIS (2013)</h2>
+        <p>From the underground clubs of the 1950s in Memphis, Tennessee comes
+          the new and thrilling Broadway musical. “Memphis” captures the
+          public’s hearts with its explosive dances, incredible songs and an
+          exciting story of fame and forbidden love. With an original score,
+          “Memphis“ focuses on a white radio host who wants to change the world
+          and an up-and-coming black singer ready for her big break.
+          In 2010, “Memphis” wins 4 Tony Awards including the category for best
+          musical .The Broadway Performance Club at the American University in
+          Bulgaria is the first amateur ensemble in the world to get the
+          official rights for the recreation of the musical.
+        </p>
+        <div class="panel-group" id="memphis-accorcion">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse4">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse4" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Svetlin Kozhuharov - Producer</p>
+               <p>Alexandra Egumenova - Director</p>
+               <p>Angelina Markova - Choreographer</p>
+               <p>Batyr Orazov - Choreographer</p>
+               <p>Nagima Iskakova - Choreographer</p>
+               <p>Gergana Petkova - Vocal Director</p>
+               <p>Violeta Petkova - Assistant Director</p>
+             </div>
+           </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' data-parent="#memphis-accordion" href="#collapse4-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse4-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://infomreja.bg/miuzikylyt-memfis-s-debiut-v-bylgariq-zasluga-na-studenti-ot-aub-11003.html">Infomreja.bg</a></p>
+                <p><a href="http://nakratko.bg/category/58/6884">Nakratko.bg</a></p>
+                <p><a href="http://www.blagoevgrad.eu/myuzikalat-memfis-za-parvi-pat-v-bal.html">Blagoevgrad.eu</a></p>
+                <p><a href="http://www.gramofona.com/video/myuzikalat-memfis-idva-i-v-burgas-muzikata-na-levon-manukyan">Gramofona.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block" src="assets/img/memphis.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#memphis">Gallery</a>
+            </h4>
+          </div>
+          <div id="memphis" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/memphis1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/memphis2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GREASE -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="project-containter">GREASE (2012)</h2>
+        <p>Your favorite songs in one place - Summer Nights, Greased Lightning,
+          We Go Together, Born to Hand Jive, Beauty School Dropout and many others.
+          "Grease" (Grease) is familiar to viewers from the Oscar-nominated film
+          from 1978 starring John Travolta and Olivia Newton-John. A nostalgic
+          look at teenage years, an energetic and exciting musical following all
+          the rules of a good comedy and love story, gathering in itself one of
+          the most popular hits of the 70s - this is "Grease"!
+          Sandy is an Australian student who meets Danny, a teenager, during
+          summer vacation with her parents in America. Sparks of pure love blaze
+          between the two. Unexpectedly for Sandy her parents decide to enroll
+          her in the American College "Rydell" where incidentally Danny studies,
+          as well. But there he is radically different. Danny is the leader of
+          the gang "Black Jackets" and the image that he has built in school has
+          nothing to do with sentimental and romantic guy. Sandy is upset and
+          seeking solace in her new friendships among the female band "Pink
+          Ladies".A nostalgic look at teenage years, an energetic and exciting
+          musical following all the rules of a good comedy and love story,
+          gathering in itself one of the most popular hits of the 70s - this is
+          "Grease"!
+        </p>
+        <div class="panel-group" id="grease-accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#grease-accordion" href="#collapse5">Creative Team</a>
+              </h4>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>Svetlin Kozhuharov - Producer</p>
+                <p>Alexandra Egumenova - Director</p>
+                <p>Maria Marinova - Choreographer</p>
+                <p>Skerdi Buhri - Choreographer</p>
+                <p>Nagima Iskakova - Choreographer</p>
+                <p>Gergana Petkova - Vocal Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse5-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse5-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://www.moreto.net/events.php?n=167776">Moreto.net</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" src="assets/img/grease.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#grease">Gallery</a>
+            </h4>
+          </div>
+          <div id="grease" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/grease1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/grease2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/grease3.jpg" class="img-responsive img-gallery" alt="Third image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOULIN ROUGE -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="project-containter">MOULIN ROUGE! (2011)</h2>
+        <p>Moulin Rouge! is a romantic story about a young English writer,
+          Christian, who falls in love with the terminally ill Satine - the star
+          of Moulin Rouge, a cabaret dancer, and a courtesan. The year is 1900
+          and Christian has come to Paris in pursuit of the Bohemian revolution
+          that has taken hold of the city's underworld. He meets a group of
+          Bohemians who convince him to write a musical show called "Spectacular,
+          Spectacular" to be performed at the cabaret Moulin Rouge where the rich
+          and poor men alike come to be entertained by the dancers. There he
+          meets the club's highest paid courtesan. Satine. The, love is made
+          impossible after the owner of Moulin Rouge, Harold Zidler, offers Satine
+          to the Duke of Monroth in return of a generous investment in "Spectacular,
+          Spectacular". The Duke can fulfill Satine's dream and turn her into a
+          famous real actress, but the price for that is her bociy.
+          The director Baz Luhrmann brings this story to the big screen in the
+          movie Moulin Rouge, starring Nicole Kidman and Ewan McGregor. The
+          movie is based on the tragic story of Giuseppe Verdi's opera "La
+          Traviata". It was nominated for eight Oscars and won two.
+        </p>
+        <div class="panel-group" id="mr-accordion">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse6">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse6" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Rafayel Khachatryan - Producer</p>
+               <p>Georgi Jan Petrov - Director</p>
+               <p>Lacey Cope - Choreographer</p>
+               <p>Skerdi Buhri - Choreographer</p>
+               <p>Mariana Varbanova - Choreographer</p>
+               <p>Alexandra Engumenova - Vocal Coach</p>
+               <p>Gergana Petkova - Vocal Coach</p>
+               <p>Levon Manukyan</p>
+             </div>
+           </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle='collapse' href="#collapse6-1">Articles</a>
+              </h4>
+            </div>
+            <div id="collapse6-1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p><a href="http://dariknews.bg/view_article.php?article_id=688868">Dariknews.bg</a></p>
+                <p><a href="https://www.plovdiv24.bg/novini/interesno/Studenti-ot-Amerikanskiya-predstavyat-Mulen-ruzh-v-Plovdiv-240614">Provdiv24.bg</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block" src="assets/img/mr.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#mr">Gallery</a>
+            </h4>
+          </div>
+          <div id="mr" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/mr1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/mr2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HAIRSPRAY -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">HAIRSPRAY (2010)</h2>
+        <p>Hairspay tells the story of the chubby and talented teenager Tracy
+          Turnblad. The year is 1962 and the wind of change blows all around
+          Baltimore. Tracy, a girl with big hair and big dream, has one and only
+          passion: to dance in the "Corny Collins Show". After meeting Seaweed
+          she becomes convinced that everyone can make their dreams come true,
+          regardless of appearance and skin color. The musical follows Tracy's
+          transformation from a zealous fan of show of the 'nicest kids in town’,
+          to a participant in the show as a real star. She is determined to show
+          the world that everything it needs is a bit of rhythm and lots of
+          HAIRSPRAY.
+          Since its Broadway premiere in August 2002 until today, HAIRSPRAY wins
+          the hearts of the audience and over 37 prestigious award, including for
+          best musical. In 2007 the movie production of the musical is released,
+          casting some of the most popular actors in Hollywood: John Travolta,
+          Michelle Pfeiffer, Queen Latifah, Christopher Walken. Zac Efron and
+          Nikki Blonsky. This colorful and crag comedy, with its witty humor and
+          wild dance, manages always to make its audience cry of laughter, no
+          matter whether in front of the big screen or in the theater.
+        </p>
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" href="#collapse7">Creative Team</a>
+           </h4>
+         </div>
+         <div id="collapse7" class="panel-collapse collapse">
+           <div class="panel-body">
+             <p>Rafayel Khachatryan - Producer</p>
+             <p>Georgi Jan Petrov - Director</p>
+             <p>Antoni Stoyanov - Choreographer</p>
+             <p>Katerina Lovtchina - Choreographer</p>
+             <p>Regina Sadikova - Choreographer</p>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" src="assets/img/hs.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#hairspray">Gallery</a>
+            </h4>
+          </div>
+          <div id="hairspray" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/hs1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                        <img src="assets/img/hs2.jpg" class="img-responsive img-gallery" alt="Second image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEST SIDE STORY -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading project-containter">WEST SIDE STORY (2009)</h2>
+        <p>Inspired by the timeless story of Romeo and Juliet, West Side Story
+          takes Shakespeare’s star-crossed lovers, and places them in the vibrant
+          battleground of New York City’s West Side in the 1950s. In the midst of
+          the deep-seated rivalry between the Puerto Rican gang, the Sharks, and
+          the white gang, the Jets, Maria and Tony discover that ancient grudges
+          are no match for true love. Their warring factions, however, refuse to
+          back down, and the “rumbles”, romance, and resentment lead the bloody
+          path to the lovers’ ultimate, tragic conclusion With soaring,
+          sophisticated, and diverse melodies, energetic and athletic dance
+          battles, and its remarkably salient social message, West Side Story
+          remains one of American musical theatre’s most revolutionary and most
+          loved treasures.
+        </p>
+        <div class="panel-group">
+          <div class="panel panel-default">
+           <div class="panel-heading">
+             <h4 class="panel-title">
+               <a data-toggle="collapse" href="#collapse8">Creative Team</a>
+             </h4>
+           </div>
+           <div id="collapse8" class="panel-collapse collapse">
+             <div class="panel-body">
+               <p>Rafayel Khachatryan - Producer</p>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center-block" src="assets/img/wss.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#wss">Gallery</a>
+            </h4>
+          </div>
+          <div id="wss" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/wss1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHICAGO -->
+  <hr class="featurette-divider">
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">CHICAGO (2008)</h2>
+        <p>Broadway’s longest-running American musical, Chicago, is a dazzling
+          and satirical look at fame, justice, and the media machine. Set in
+          1920s Chicago and based on real-life murders and trials, Chicago
+          follows Roxie Hart, a wannabe vaudevillian star who murders her lover
+          and is arrested, despite her attempts to convince her pushover husband,
+          Amos, to lie for her. In the Cook County Jail, Roxie meets her hero,
+          the famed double-murderess and nightclub performer Velma Kelly. When
+          both acquire the same lawyer, the greedy and lustful superstar, Billy
+          Flynn, tensions come to a head as they vie for the spotlight-- though
+          instead of onstage, they’re mugging for the flashbulb of the newspaper
+          reporters. With catchy, sexy music and timeless lyrics by John Kander
+          and Fred Ebb, and a funny, intelligent, and utterly engaging book by
+          Kander and Bob Fosse, Chicago is a musical spectacular that is as
+          addictive as gossip rags and as unforgettable as any trial of the
+          century.
+        </p>
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h4 class="panel-title">
+             <a data-toggle="collapse" href="#collapse9">Creative Team</a>
+           </h4>
+         </div>
+         <div id="collapse9" class="panel-collapse collapse">
+           <div class="panel-body">
+             <p>Rafayel Khachatryan - Producer</p>
+           </div>
+         </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" src="assets/img/chicago.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="container project-page">
+    <div class="row featurette project-containter container">
+      <div class="panel-gourp" style="position: relative">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#chicago">Gallery</a>
+            </h4>
+          </div>
+          <div id="chicago" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="gallery">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-3 gallery-item">
+                      <a href="#galleryImg1" class="link-gallery" data-toggle="modal" data-target="#modalGallery">
+                      <img src="assets/img/chicago1.jpg" class="img-responsive img-gallery" alt="First image">
+                      </a>
+                    </div>
+                    <!-- /.col -->
+                  </div> <!--/.row  -->
+                </div> <!-- /.container -->
+              </div> <!-- /.gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalGallery" tabindex="-1" role="dialog" aria-labelledby="modalGalleryLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+        </div> <!-- /.modal-header -->
+
+        <div class="modal-body">
+          <div id="carouselGallery" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+            </div> <!-- /.carousel-inner -->
+          </div> <!-- /.carousel -->
+        </div> <!-- /.modal-body -->
+      </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
 
 <!-- /END THE FEATURETTES -->
 
@@ -110,5 +1022,6 @@
   <footer class="ynnenu-container ynnenu-padding-64 ynnenu-center  ynnenu-light-grey ynnenu-xlarge">
     <p class="ynnenu-medium"> Broadway Performance Club</p>
   </footer>
+</div>
 </body>
 </html>
