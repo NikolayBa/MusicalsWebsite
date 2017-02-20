@@ -95,11 +95,11 @@
   		$(galleryId + ' .pagination').html("");
   	}
 
-  	function setTitle(galleryId, currentSlideIndex){
+  	/*function setTitle(galleryId, currentSlideIndex){
   		var imgAlt = $(galleryId + ' .item').eq(currentSlideIndex).find('img').attr('alt');
 
   		$('.modal-title').text(imgAlt);
-  	}
+  	}*/
   });
   </script>
 
@@ -996,7 +996,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="modalGalleryLabel">Gallery</h4>
+          <h4 class="modal-title" id="modalGalleryLabel"></h4>
         </div> <!-- /.modal-header -->
 
         <div class="modal-body">
