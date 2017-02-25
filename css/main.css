@@ -155,9 +155,9 @@ li a:hover{
   color: green;
 }
 
-.right.carousel-control, .left.carousel-control {
+/*.right.carousel-control, .left.carousel-control {
     display: none;
-}
+}*/
 
 hr {
   color: black;
