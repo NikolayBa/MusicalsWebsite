@@ -28,321 +28,321 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
-h1,h2,h3,h4,h5,h6,.ynnenu-slim,.ynnenu-wide{font-family:"Segoe UI",Arial,sans-serif}
+h1,h2,h3,h4,h5,h6,.musicals-slim,.musicals-wide{font-family:"Segoe UI",Arial,sans-serif}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
-.ynnenu-serif{font-family:"Times New Roman",Times,serif}
-h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.ynnenu-wide{letter-spacing:4px}
+.musicals-serif{font-family:"Times New Roman",Times,serif}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0}.musicals-wide{letter-spacing:4px}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 img{margin-bottom:-5px}a{color:inherit}
-.ynnenu-image{max-width:100%;height:auto}
-.ynnenu-table,.ynnenu-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
-.ynnenu-table-all{border:1px solid #ccc}
-.ynnenu-bordered tr,.ynnenu-table-all tr{border-bottom:1px solid #ddd}
-.ynnenu-striped tbody tr:nth-child(even){background-color:#f1f1f1}
-.ynnenu-table-all tr:nth-child(odd){background-color:#fff}
-.ynnenu-table-all tr:nth-child(even){background-color:#f1f1f1}
-.ynnenu-hoverable tbody tr:hover,.ynnenu-ul.ynnenu-hoverable li:hover{background-color:#ccc}
-.ynnenu-centered tr th,.ynnenu-centered tr td{text-align:center}
-.ynnenu-table td,.ynnenu-table th,.ynnenu-table-all td,.ynnenu-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
-.ynnenu-table th:first-child,.ynnenu-table td:first-child,.ynnenu-table-all th:first-child,.ynnenu-table-all td:first-child{padding-left:16px}
-.ynnenu-btn,.ynnenu-btn-block{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
-.ynnenu-btn:hover,.ynnenu-btn-block:hover,.ynnenu-btn-floating:hover,.ynnenu-btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.ynnenu-btn,.ynnenu-btn-floating,.ynnenu-btn-floating-large,.ynnenu-closenav,.ynnenu-opennav{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.ynnenu-btn-floating,.ynnenu-btn-floating-large{display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px}
-.ynnenu-btn-floating{width:40px;height:40px;line-height:40px}.ynnenu-btn-floating-large{width:56px;height:56px;line-height:56px}
-.ynnenu-disabled,.ynnenu-btn:disabled,.ynnenu-btn-floating:disabled,.ynnenu-btn-floating-large:disabled{cursor:not-allowed;opacity:0.3}
-.ynnenu-btn.ynnenu-disabled *,.ynnenu-btn-block.ynnenu-disabled,.ynnenu-btn-floating.ynnenu-disabled *,.ynnenu-btn:disabled *,.ynnenu-btn-floating:disabled *{pointer-events:none}
-.ynnenu-btn.ynnenu-disabled:hover,.ynnenu-btn-block.ynnenu-disabled:hover,.ynnenu-btn:disabled:hover,.ynnenu-btn-floating.ynnenu-disabled:hover,.ynnenu-btn-floating:disabled:hover,
-.ynnenu-btn-floating-large.ynnenu-disabled:hover,.ynnenu-btn-floating-large:disabled:hover{box-shadow:none}
-.ynnenu-btn-group .ynnenu-btn{float:left}.ynnenu-btn-block{width:100%}
-.ynnenu-btn-bar .ynnenu-btn{box-shadow:none;background-color:inherit;color:inherit;float:left}.ynnenu-btn-bar .ynnenu-btn:hover{background-color:#ccc}
-.ynnenu-badge,.ynnenu-tag,.ynnenu-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
-.ynnenu-badge{border-radius:50%}
-ul.ynnenu-ul{list-style-type:none;padding:0;margin:0}ul.ynnenu-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}ul.ynnenu-ul li:last-child{border-bottom:none}
-.ynnenu-tooltip,.ynnenu-display-container{position:relative}.ynnenu-tooltip .ynnenu-text{display:none}.ynnenu-tooltip:hover .ynnenu-text{display:inline-block}
-.ynnenu-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
-.ynnenu-navbar li{float:left}.ynnenu-navbar li a,.ynnenu-navitem{display:block;padding:8px 16px}.ynnenu-navbar li a:hover{color:#000;background-color:#ccc}
-.ynnenu-navbar .ynnenu-dropdown-hover,.ynnenu-navbar .ynnenu-dropdown-click{position:static}
-.ynnenu-navbar .ynnenu-dropdown-hover:hover,.ynnenu-navbar .ynnenu-dropdown-hover:first-child,.ynnenu-navbar .ynnenu-dropdown-click:hover{background-color:#ccc;color:#000}
-.ynnenu-navbar a,.ynnenu-topnav a,.ynnenu-sidenav a,.ynnenu-dropdown-content a,.ynnenu-accordion-content a,.ynnenu-dropnav a{text-decoration:none!important}
-.ynnenu-navbar .ynnenu-opennav.ynnenu-right{float:right!important}.ynnenu-topnav{padding:8px 8px}
-.ynnenu-topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .3s;transition:border-bottom .3s}
-.ynnenu-topnav a:hover{border-bottom:3px solid #fff}.ynnenu-topnav .ynnenu-dropdown-hover a{border-bottom:0}
-.ynnenu-opennav,.ynnenu-closenav{color:inherit}.ynnenu-opennav:hover,.ynnenu-closenav:hover{cursor:pointer;opacity:0.8}
-.ynnenu-btn,.ynnenu-btn-floating,.ynnenu-dropnav a,.ynnenu-btn-floating-large,.ynnenu-btn-block,.ynnenu-hover-shadow,.ynnenu-hover-opacity,.ynnenu-hover-opacity-off,.ynnenu-hover-sepia,.ynnenu-hover-grayscale,.ynnenu-hover-greyscale,
-.ynnenu-navbar a,.ynnenu-sidenav a,.ynnenu-pagination li a,.ynnenu-hoverable tbody tr,.ynnenu-hoverable li,.ynnenu-accordion-content a,.ynnenu-dropdown-content a,.ynnenu-dropdown-click:hover,.ynnenu-dropdown-hover:hover,.ynnenu-opennav,.ynnenu-closenav,.ynnenu-closebtn,
-.ynnenu-hover-amber,.ynnenu-hover-aqua,.ynnenu-hover-blue,.ynnenu-hover-light-blue,.ynnenu-hover-brown,.ynnenu-hover-cyan,.ynnenu-hover-blue-grey,.ynnenu-hover-green,.ynnenu-hover-light-green,.ynnenu-hover-indigo,.ynnenu-hover-khaki,.ynnenu-hover-lime,.ynnenu-hover-orange,.ynnenu-hover-deep-orange,.ynnenu-hover-pink,
-.ynnenu-hover-purple,.ynnenu-hover-deep-purple,.ynnenu-hover-red,.ynnenu-hover-sand,.ynnenu-hover-teal,.ynnenu-hover-yellow,.ynnenu-hover-white,.ynnenu-hover-black,.ynnenu-hover-grey,.ynnenu-hover-light-grey,.ynnenu-hover-dark-grey,.ynnenu-hover-text-amber,.ynnenu-hover-text-aqua,.ynnenu-hover-text-blue,.ynnenu-hover-text-light-blue,
-.ynnenu-hover-text-brown,.ynnenu-hover-text-cyan,.ynnenu-hover-text-blue-grey,.ynnenu-hover-text-green,.ynnenu-hover-text-light-green,.ynnenu-hover-text-indigo,.ynnenu-hover-text-khaki,.ynnenu-hover-text-lime,.ynnenu-hover-text-orange,.ynnenu-hover-text-deep-orange,.ynnenu-hover-text-pink,.ynnenu-hover-text-purple,
-.ynnenu-hover-text-deep-purple,.ynnenu-hover-text-red,.ynnenu-hover-text-sand,.ynnenu-hover-text-teal,.ynnenu-hover-text-yellow,.ynnenu-hover-text-white,.ynnenu-hover-text-black,.ynnenu-hover-text-grey,.ynnenu-hover-text-light-grey,.ynnenu-hover-text-dark-grey
+.musicals-image{max-width:100%;height:auto}
+.musicals-table,.musicals-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+.musicals-table-all{border:1px solid #ccc}
+.musicals-bordered tr,.musicals-table-all tr{border-bottom:1px solid #ddd}
+.musicals-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.musicals-table-all tr:nth-child(odd){background-color:#fff}
+.musicals-table-all tr:nth-child(even){background-color:#f1f1f1}
+.musicals-hoverable tbody tr:hover,.musicals-ul.musicals-hoverable li:hover{background-color:#ccc}
+.musicals-centered tr th,.musicals-centered tr td{text-align:center}
+.musicals-table td,.musicals-table th,.musicals-table-all td,.musicals-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.musicals-table th:first-child,.musicals-table td:first-child,.musicals-table-all th:first-child,.musicals-table-all td:first-child{padding-left:16px}
+.musicals-btn,.musicals-btn-block{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+.musicals-btn:hover,.musicals-btn-block:hover,.musicals-btn-floating:hover,.musicals-btn-floating-large:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.musicals-btn,.musicals-btn-floating,.musicals-btn-floating-large,.musicals-closenav,.musicals-opennav{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.musicals-btn-floating,.musicals-btn-floating-large{display:inline-block;text-align:center;color:#fff;background-color:#000;position:relative;overflow:hidden;z-index:1;padding:0;border-radius:50%;cursor:pointer;font-size:24px}
+.musicals-btn-floating{width:40px;height:40px;line-height:40px}.musicals-btn-floating-large{width:56px;height:56px;line-height:56px}
+.musicals-disabled,.musicals-btn:disabled,.musicals-btn-floating:disabled,.musicals-btn-floating-large:disabled{cursor:not-allowed;opacity:0.3}
+.musicals-btn.musicals-disabled *,.musicals-btn-block.musicals-disabled,.musicals-btn-floating.musicals-disabled *,.musicals-btn:disabled *,.musicals-btn-floating:disabled *{pointer-events:none}
+.musicals-btn.musicals-disabled:hover,.musicals-btn-block.musicals-disabled:hover,.musicals-btn:disabled:hover,.musicals-btn-floating.musicals-disabled:hover,.musicals-btn-floating:disabled:hover,
+.musicals-btn-floating-large.musicals-disabled:hover,.musicals-btn-floating-large:disabled:hover{box-shadow:none}
+.musicals-btn-group .musicals-btn{float:left}.musicals-btn-block{width:100%}
+.musicals-btn-bar .musicals-btn{box-shadow:none;background-color:inherit;color:inherit;float:left}.musicals-btn-bar .musicals-btn:hover{background-color:#ccc}
+.musicals-badge,.musicals-tag,.musicals-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+.musicals-badge{border-radius:50%}
+ul.musicals-ul{list-style-type:none;padding:0;margin:0}ul.musicals-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}ul.musicals-ul li:last-child{border-bottom:none}
+.musicals-tooltip,.musicals-display-container{position:relative}.musicals-tooltip .musicals-text{display:none}.musicals-tooltip:hover .musicals-text{display:inline-block}
+.musicals-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.musicals-navbar li{float:left}.musicals-navbar li a,.musicals-navitem{display:block;padding:8px 16px}.musicals-navbar li a:hover{color:#000;background-color:#ccc}
+.musicals-navbar .musicals-dropdown-hover,.musicals-navbar .musicals-dropdown-click{position:static}
+.musicals-navbar .musicals-dropdown-hover:hover,.musicals-navbar .musicals-dropdown-hover:first-child,.musicals-navbar .musicals-dropdown-click:hover{background-color:#ccc;color:#000}
+.musicals-navbar a,.musicals-topnav a,.musicals-sidenav a,.musicals-dropdown-content a,.musicals-accordion-content a,.musicals-dropnav a{text-decoration:none!important}
+.musicals-navbar .musicals-opennav.musicals-right{float:right!important}.musicals-topnav{padding:8px 8px}
+.musicals-topnav a{padding:0 8px;border-bottom:3px solid transparent;-webkit-transition:border-bottom .3s;transition:border-bottom .3s}
+.musicals-topnav a:hover{border-bottom:3px solid #fff}.musicals-topnav .musicals-dropdown-hover a{border-bottom:0}
+.musicals-opennav,.musicals-closenav{color:inherit}.musicals-opennav:hover,.musicals-closenav:hover{cursor:pointer;opacity:0.8}
+.musicals-btn,.musicals-btn-floating,.musicals-dropnav a,.musicals-btn-floating-large,.musicals-btn-block,.musicals-hover-shadow,.musicals-hover-opacity,.musicals-hover-opacity-off,.musicals-hover-sepia,.musicals-hover-grayscale,.musicals-hover-greyscale,
+.musicals-navbar a,.musicals-sidenav a,.musicals-pagination li a,.musicals-hoverable tbody tr,.musicals-hoverable li,.musicals-accordion-content a,.musicals-dropdown-content a,.musicals-dropdown-click:hover,.musicals-dropdown-hover:hover,.musicals-opennav,.musicals-closenav,.musicals-closebtn,
+.musicals-hover-amber,.musicals-hover-aqua,.musicals-hover-blue,.musicals-hover-light-blue,.musicals-hover-brown,.musicals-hover-cyan,.musicals-hover-blue-grey,.musicals-hover-green,.musicals-hover-light-green,.musicals-hover-indigo,.musicals-hover-khaki,.musicals-hover-lime,.musicals-hover-orange,.musicals-hover-deep-orange,.musicals-hover-pink,
+.musicals-hover-purple,.musicals-hover-deep-purple,.musicals-hover-red,.musicals-hover-sand,.musicals-hover-teal,.musicals-hover-yellow,.musicals-hover-white,.musicals-hover-black,.musicals-hover-grey,.musicals-hover-light-grey,.musicals-hover-dark-grey,.musicals-hover-text-amber,.musicals-hover-text-aqua,.musicals-hover-text-blue,.musicals-hover-text-light-blue,
+.musicals-hover-text-brown,.musicals-hover-text-cyan,.musicals-hover-text-blue-grey,.musicals-hover-text-green,.musicals-hover-text-light-green,.musicals-hover-text-indigo,.musicals-hover-text-khaki,.musicals-hover-text-lime,.musicals-hover-text-orange,.musicals-hover-text-deep-orange,.musicals-hover-text-pink,.musicals-hover-text-purple,
+.musicals-hover-text-deep-purple,.musicals-hover-text-red,.musicals-hover-text-sand,.musicals-hover-text-teal,.musicals-hover-text-yellow,.musicals-hover-text-white,.musicals-hover-text-black,.musicals-hover-text-grey,.musicals-hover-text-light-grey,.musicals-hover-text-dark-grey
 {-webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s,filter 0.3s;transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s,filter 0.3s}
-.ynnenu-ripple:active{opacity:0.5}.ynnenu-ripple{-webkit-transition:opacity 0s;transition:opacity 0s}
-.ynnenu-sidenav{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
-.ynnenu-sidenav a{padding:4px 2px 4px 16px}.ynnenu-sidenav a:hover{background-color:#ccc}.ynnenu-sidenav a,.ynnenu-dropnav a{display:block}
-.ynnenu-sidenav .ynnenu-dropdown-hover:hover,.ynnenu-sidenav .ynnenu-dropdown-hover:first-child,.ynnenu-sidenav .ynnenu-dropdown-click:hover,.ynnenu-dropnav a:hover{background-color:#ccc;color:#000}
-.ynnenu-sidenav .ynnenu-dropdown-hover,.ynnenu-sidenav .ynnenu-dropdown-click {width:100%}.ynnenu-sidenav .ynnenu-dropdown-hover .ynnenu-dropdown-content,.ynnenu-sidenav .ynnenu-dropdown-click .ynnenu-dropdown-content{min-width:100%}
-.ynnenu-main,#main{transition:margin-left .4s}
-.ynnenu-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
-.ynnenu-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.ynnenu-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
-.ynnenu-closebtn:hover,.ynnenu-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
-.ynnenu-pagination{display:inline-block;padding:0;margin:0}.ynnenu-pagination li{display:inline}
-.ynnenu-pagination li a{text-decoration:none;color:#000;float:left;padding:8px 16px}
-.ynnenu-pagination li a:hover{background-color:#ccc}
-.ynnenu-input-group,.ynnenu-group{margin-top:24px;margin-bottom:24px}
-.ynnenu-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
-.ynnenu-label{color:#009688}.ynnenu-input:not(:valid)~.ynnenu-validate{color:#f44336}
-.ynnenu-select{padding:9px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
-.ynnenu-select select:focus{color:#000;border:1px solid #009688}.ynnenu-select option[disabled]{color:#009688}
-.ynnenu-dropdown-click,.ynnenu-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
-.ynnenu-dropdown-hover:hover .ynnenu-dropdown-content{display:block;z-index:1}
-.ynnenu-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
-.ynnenu-dropdown-content a{padding:6px 16px;display:block}
-.ynnenu-dropdown-content a:hover{background-color:#ccc}
-.ynnenu-accordion {width:100%;cursor:pointer}
-.ynnenu-accordion-content{cursor:auto;display:none;position:relative;width:100%;margin:0;padding:0}
-.ynnenu-accordion-content a{padding:6px 16px;display:block}.ynnenu-accordion-content a:hover{background-color:#ccc}
-.ynnenu-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
-.ynnenu-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
-input[type=checkbox].ynnenu-check,input[type=radio].ynnenu-radio{width:24px;height:24px;position:relative;top:6px}
-input[type=checkbox].ynnenu-check:checked+.ynnenu-validate,input[type=radio].ynnenu-radio:checked+.ynnenu-validate{color:#009688} 
-input[type=checkbox].ynnenu-check:disabled+.ynnenu-validate,input[type=radio].ynnenu-radio:disabled+.ynnenu-validate{color:#aaa}
-.ynnenu-responsive{overflow-x:auto}
-.ynnenu-container:after,.ynnenu-panel:after,.ynnenu-row:after,.ynnenu-row-padding:after,.ynnenu-topnav:after,.ynnenu-clear:after,.ynnenu-btn-group:before,.ynnenu-btn-group:after,.ynnenu-btn-bar:before,.ynnenu-btn-bar:after
+.musicals-ripple:active{opacity:0.5}.musicals-ripple{-webkit-transition:opacity 0s;transition:opacity 0s}
+.musicals-sidenav{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.musicals-sidenav a{padding:4px 2px 4px 16px}.musicals-sidenav a:hover{background-color:#ccc}.musicals-sidenav a,.musicals-dropnav a{display:block}
+.musicals-sidenav .musicals-dropdown-hover:hover,.musicals-sidenav .musicals-dropdown-hover:first-child,.musicals-sidenav .musicals-dropdown-click:hover,.musicals-dropnav a:hover{background-color:#ccc;color:#000}
+.musicals-sidenav .musicals-dropdown-hover,.musicals-sidenav .musicals-dropdown-click {width:100%}.musicals-sidenav .musicals-dropdown-hover .musicals-dropdown-content,.musicals-sidenav .musicals-dropdown-click .musicals-dropdown-content{min-width:100%}
+.musicals-main,#main{transition:margin-left .4s}
+.musicals-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.musicals-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.musicals-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
+.musicals-closebtn:hover,.musicals-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
+.musicals-pagination{display:inline-block;padding:0;margin:0}.musicals-pagination li{display:inline}
+.musicals-pagination li a{text-decoration:none;color:#000;float:left;padding:8px 16px}
+.musicals-pagination li a:hover{background-color:#ccc}
+.musicals-input-group,.musicals-group{margin-top:24px;margin-bottom:24px}
+.musicals-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
+.musicals-label{color:#009688}.musicals-input:not(:valid)~.musicals-validate{color:#f44336}
+.musicals-select{padding:9px 0;width:100%;color:#000;border:1px solid transparent;border-bottom:1px solid #009688}
+.musicals-select select:focus{color:#000;border:1px solid #009688}.musicals-select option[disabled]{color:#009688}
+.musicals-dropdown-click,.musicals-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.musicals-dropdown-hover:hover .musicals-dropdown-content{display:block;z-index:1}
+.musicals-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0}
+.musicals-dropdown-content a{padding:6px 16px;display:block}
+.musicals-dropdown-content a:hover{background-color:#ccc}
+.musicals-accordion {width:100%;cursor:pointer}
+.musicals-accordion-content{cursor:auto;display:none;position:relative;width:100%;margin:0;padding:0}
+.musicals-accordion-content a{padding:6px 16px;display:block}.musicals-accordion-content a:hover{background-color:#ccc}
+.musicals-progress-container{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+.musicals-progressbar{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+input[type=checkbox].musicals-check,input[type=radio].musicals-radio{width:24px;height:24px;position:relative;top:6px}
+input[type=checkbox].musicals-check:checked+.musicals-validate,input[type=radio].musicals-radio:checked+.musicals-validate{color:#009688} 
+input[type=checkbox].musicals-check:disabled+.musicals-validate,input[type=radio].musicals-radio:disabled+.musicals-validate{color:#aaa}
+.musicals-responsive{overflow-x:auto}
+.musicals-container:after,.musicals-panel:after,.musicals-row:after,.musicals-row-padding:after,.musicals-topnav:after,.musicals-clear:after,.musicals-btn-group:before,.musicals-btn-group:after,.musicals-btn-bar:before,.musicals-btn-bar:after
 {content:"";display:table;clear:both}
-.ynnenu-col,.ynnenu-half,.ynnenu-third,.ynnenu-twothird,.ynnenu-threequarter,.ynnenu-quarter{float:left;width:100%}
-.ynnenu-col.s1{width:8.33333%}
-.ynnenu-col.s2{width:16.66666%}
-.ynnenu-col.s3{width:24.99999%}
-.ynnenu-col.s4{width:33.33333%}
-.ynnenu-col.s5{width:41.66666%}
-.ynnenu-col.s6{width:49.99999%}
-.ynnenu-col.s7{width:58.33333%}
-.ynnenu-col.s8{width:66.66666%}
-.ynnenu-col.s9{width:74.99999%}
-.ynnenu-col.s10{width:83.33333%}
-.ynnenu-col.s11{width:91.66666%}
-.ynnenu-col.s12,.ynnenu-half,.ynnenu-third,.ynnenu-twothird,.ynnenu-threequarter,.ynnenu-quarter{width:99.99999%}
+.musicals-col,.musicals-half,.musicals-third,.musicals-twothird,.musicals-threequarter,.musicals-quarter{float:left;width:100%}
+.musicals-col.s1{width:8.33333%}
+.musicals-col.s2{width:16.66666%}
+.musicals-col.s3{width:24.99999%}
+.musicals-col.s4{width:33.33333%}
+.musicals-col.s5{width:41.66666%}
+.musicals-col.s6{width:49.99999%}
+.musicals-col.s7{width:58.33333%}
+.musicals-col.s8{width:66.66666%}
+.musicals-col.s9{width:74.99999%}
+.musicals-col.s10{width:83.33333%}
+.musicals-col.s11{width:91.66666%}
+.musicals-col.s12,.musicals-half,.musicals-third,.musicals-twothird,.musicals-threequarter,.musicals-quarter{width:99.99999%}
 @media only screen and (min-width:601px){
-.ynnenu-col.m1{width:8.33333%}
-.ynnenu-col.m2{width:16.66666%}
-.ynnenu-col.m3,.ynnenu-quarter{width:24.99999%}
-.ynnenu-col.m4,.ynnenu-third{width:33.33333%}
-.ynnenu-col.m5{width:41.66666%}
-.ynnenu-col.m6,.ynnenu-half{width:49.99999%}
-.ynnenu-col.m7{width:58.33333%}
-.ynnenu-col.m8,.ynnenu-twothird{width:66.66666%}
-.ynnenu-col.m9,.ynnenu-threequarter{width:74.99999%}
-.ynnenu-col.m10{width:83.33333%}
-.ynnenu-col.m11{width:91.66666%}
-.ynnenu-col.m12{width:99.99999%}}
+.musicals-col.m1{width:8.33333%}
+.musicals-col.m2{width:16.66666%}
+.musicals-col.m3,.musicals-quarter{width:24.99999%}
+.musicals-col.m4,.musicals-third{width:33.33333%}
+.musicals-col.m5{width:41.66666%}
+.musicals-col.m6,.musicals-half{width:49.99999%}
+.musicals-col.m7{width:58.33333%}
+.musicals-col.m8,.musicals-twothird{width:66.66666%}
+.musicals-col.m9,.musicals-threequarter{width:74.99999%}
+.musicals-col.m10{width:83.33333%}
+.musicals-col.m11{width:91.66666%}
+.musicals-col.m12{width:99.99999%}}
 @media only screen and (min-width:993px){
-.ynnenu-col.l1{width:8.33333%}
-.ynnenu-col.l2{width:16.66666%}
-.ynnenu-col.l3,.ynnenu-quarter{width:24.99999%}
-.ynnenu-col.l4,.ynnenu-third{width:33.33333%}
-.ynnenu-col.l5{width:41.66666%}
-.ynnenu-col.l6,.ynnenu-half{width:49.99999%}
-.ynnenu-col.l7{width:58.33333%}
-.ynnenu-col.l8,.ynnenu-twothird{width:66.66666%}
-.ynnenu-col.l9,.ynnenu-threequarter{width:74.99999%}
-.ynnenu-col.l10{width:83.33333%}
-.ynnenu-col.l11{width:91.66666%}
-.ynnenu-col.l12{width:99.99999%}}
-.ynnenu-content{max-width:980px;margin:auto}
-.ynnenu-rest{overflow:hidden}
-.ynnenu-hide{display:none!important}.ynnenu-show-block,.ynnenu-show{display:block!important}.ynnenu-show-inline-block{display:inline-block!important}
-@media (max-width:600px){.ynnenu-modal-content{margin:0 10px;width:auto!important}.ynnenu-modal{padding-top:30px}}
-@media (max-width:768px){.ynnenu-modal-content{width:500px}.ynnenu-modal{padding-top:50px}}
-@media (min-width:993px){.ynnenu-modal-content{width:900px}}
-@media screen and (max-width:600px){.ynnenu-topnav a{display:block}.ynnenu-navbar li:not(.ynnenu-opennav){float:none;width:100%!important}.ynnenu-navbar li.ynnenu-right{float:none!important}}	
-@media screen and (max-width:600px){.ynnenu-topnav .ynnenu-dropdown-hover .ynnenu-dropdown-content,.ynnenu-navbar .ynnenu-dropdown-click .ynnenu-dropdown-content,.ynnenu-navbar .ynnenu-dropdown-hover .ynnenu-dropdown-content{position:relative}}	
-@media screen and (max-width:600px){.ynnenu-topnav,.ynnenu-navbar{text-align:center}}
-@media (max-width:600px){.ynnenu-hide-small{display:none!important}}
-@media (max-width:992px) and (min-width:601px){.ynnenu-hide-medium{display:none!important}}
-@media (min-width:993px){.ynnenu-hide-large{display:none!important}}
-@media screen and (max-width:992px){.ynnenu-sidenav.ynnenu-collapse{display:none}.ynnenu-main{margin-left:0!important;margin-right:0!important}}
-@media screen and (min-width:993px){.ynnenu-sidenav.ynnenu-collapse{display:block!important}}
-.ynnenu-top,.ynnenu-bottom{position:fixed;width:100%;z-index:1}.ynnenu-top{top:0}.ynnenu-bottom{bottom:0}
-.ynnenu-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
-.ynnenu-left{float:left!important}.ynnenu-right{float:right!important}
-.ynnenu-tiny{font-size:10px!important}.ynnenu-small{font-size:12px!important}
-.ynnenu-medium{font-size:15px!important}.ynnenu-large{font-size:18px!important}
-.ynnenu-xlarge{font-size:24px!important}.ynnenu-xxlarge{font-size:36px!important}
-.ynnenu-xxxlarge{font-size:48px!important}.ynnenu-jumbo{font-size:64px!important}
-.ynnenu-vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
-.ynnenu-left-align{text-align:left!important}.ynnenu-right-align{text-align:right!important}
-.ynnenu-justify{text-align:justify!important}.ynnenu-center{text-align:center!important}
-.ynnenu-display-topleft{position:absolute;left:0;top:0}.ynnenu-display-topright{position:absolute;right:0;top:0}
-.ynnenu-display-bottomleft{position:absolute;left:0;bottom:0}.ynnenu-display-bottomright{position:absolute;right:0;bottom:0}
-.ynnenu-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.ynnenu-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.ynnenu-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
-.ynnenu-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.ynnenu-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.ynnenu-circle{border-radius:50%!important}
-.ynnenu-round-small{border-radius:2px!important}.ynnenu-round,.ynnenu-round-medium{border-radius:4px!important}
-.ynnenu-round-large{border-radius:8px!important}.ynnenu-round-xlarge{border-radius:16px!important}
-.ynnenu-round-xxlarge{border-radius:32px!important}.ynnenu-round-jumbo{border-radius:64px!important}
-.ynnenu-border-0{border:0!important}.ynnenu-border{border:1px solid #ccc!important}
-.ynnenu-border-top{border-top:1px solid #ccc!important}.ynnenu-border-bottom{border-bottom:1px solid #ccc!important}
-.ynnenu-border-left{border-left:1px solid #ccc!important}.ynnenu-border-right{border-right:1px solid #ccc!important}
-.ynnenu-margin{margin:16px!important}.ynnenu-margin-0{margin:0!important}
-.ynnenu-margin-top{margin-top:16px!important}.ynnenu-margin-bottom{margin-bottom:16px!important}
-.ynnenu-margin-left{margin-left:16px!important}.ynnenu-margin-right{margin-right:16px!important}
-.ynnenu-section{margin-top:16px!important;margin-bottom:16px!important}
-.ynnenu-padding-tiny{padding:2px 4px!important}.ynnenu-padding-small{padding:4px 8px!important}
-.ynnenu-padding-medium,.ynnenu-padding,.ynnenu-form{padding:8px 16px!important}
-.ynnenu-padding-large{padding:12px 24px!important}.ynnenu-padding-xlarge{padding:16px 32px!important}
-.ynnenu-padding-xxlarge{padding:24px 48px!important}.ynnenu-padding-jumbo{padding:32px 64px!important}
-.ynnenu-padding-4{padding-top:4px!important;padding-bottom:4px!important}
-.ynnenu-padding-8{padding-top:8px!important;padding-bottom:8px!important}
-.ynnenu-padding-12{padding-top:12px!important;padding-bottom:12px!important}
-.ynnenu-padding-16{padding-top:16px!important;padding-bottom:16px!important}
-.ynnenu-padding-24{padding-top:24px!important;padding-bottom:24px!important}
-.ynnenu-padding-32{padding-top:32px!important;padding-bottom:32px!important}
-.ynnenu-padding-48{padding-top:48px!important;padding-bottom:48px!important}
-.ynnenu-padding-64{padding-top:64px!important;padding-bottom:64px!important}
-.ynnenu-padding-128{padding-top:128px!important;padding-bottom:128px!important}
-.ynnenu-padding-0{padding:0!important}
-.ynnenu-padding-top{padding-top:8px!important}.ynnenu-padding-bottom{padding-bottom:8px!important}
-.ynnenu-padding-left{padding-left:16px!important}.ynnenu-padding-right{padding-right:16px!important}
-.ynnenu-topbar{border-top:6px solid #ccc!important}.ynnenu-bottombar{border-bottom:6px solid #ccc!important}
-.ynnenu-leftbar{border-left:6px solid #ccc!important}.ynnenu-rightbar{border-right:6px solid #ccc!important}
-.ynnenu-row-padding,.ynnenu-row-padding>.ynnenu-half,.ynnenu-row-padding>.ynnenu-third,.ynnenu-row-padding>.ynnenu-twothird,.ynnenu-row-padding>.ynnenu-threequarter,.ynnenu-row-padding>.ynnenu-quarter,.ynnenu-row-padding>.ynnenu-col{padding:0 8px}
-.ynnenu-spin{animation:ynnenu-spin 2s infinite linear;-webkit-animation:ynnenu-spin 2s infinite linear}
-@-webkit-keyframes ynnenu-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-@keyframes ynnenu-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
-.ynnenu-container{padding:0.01em 16px}
-.ynnenu-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
-.ynnenu-example{background-color:#f1f1f1;padding:0.01em 16px}
-.ynnenu-code,.ynnenu-codespan{font-family:Consolas,"courier new";font-size:16px}
-.ynnenu-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
-.ynnenu-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
-.ynnenu-example,.ynnenu-code{margin:20px 0}.ynnenu-card{border:1px solid #ccc}
-.ynnenu-card-2,.ynnenu-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
-.ynnenu-card-4,.ynnenu-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.ynnenu-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
-.ynnenu-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
-.ynnenu-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
-.ynnenu-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
-.ynnenu-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+.musicals-col.l1{width:8.33333%}
+.musicals-col.l2{width:16.66666%}
+.musicals-col.l3,.musicals-quarter{width:24.99999%}
+.musicals-col.l4,.musicals-third{width:33.33333%}
+.musicals-col.l5{width:41.66666%}
+.musicals-col.l6,.musicals-half{width:49.99999%}
+.musicals-col.l7{width:58.33333%}
+.musicals-col.l8,.musicals-twothird{width:66.66666%}
+.musicals-col.l9,.musicals-threequarter{width:74.99999%}
+.musicals-col.l10{width:83.33333%}
+.musicals-col.l11{width:91.66666%}
+.musicals-col.l12{width:99.99999%}}
+.musicals-content{max-width:980px;margin:auto}
+.musicals-rest{overflow:hidden}
+.musicals-hide{display:none!important}.musicals-show-block,.musicals-show{display:block!important}.musicals-show-inline-block{display:inline-block!important}
+@media (max-width:600px){.musicals-modal-content{margin:0 10px;width:auto!important}.musicals-modal{padding-top:30px}}
+@media (max-width:768px){.musicals-modal-content{width:500px}.musicals-modal{padding-top:50px}}
+@media (min-width:993px){.musicals-modal-content{width:900px}}
+@media screen and (max-width:600px){.musicals-topnav a{display:block}.musicals-navbar li:not(.musicals-opennav){float:none;width:100%!important}.musicals-navbar li.musicals-right{float:none!important}}	
+@media screen and (max-width:600px){.musicals-topnav .musicals-dropdown-hover .musicals-dropdown-content,.musicals-navbar .musicals-dropdown-click .musicals-dropdown-content,.musicals-navbar .musicals-dropdown-hover .musicals-dropdown-content{position:relative}}	
+@media screen and (max-width:600px){.musicals-topnav,.musicals-navbar{text-align:center}}
+@media (max-width:600px){.musicals-hide-small{display:none!important}}
+@media (max-width:992px) and (min-width:601px){.musicals-hide-medium{display:none!important}}
+@media (min-width:993px){.musicals-hide-large{display:none!important}}
+@media screen and (max-width:992px){.musicals-sidenav.musicals-collapse{display:none}.musicals-main{margin-left:0!important;margin-right:0!important}}
+@media screen and (min-width:993px){.musicals-sidenav.musicals-collapse{display:block!important}}
+.musicals-top,.musicals-bottom{position:fixed;width:100%;z-index:1}.musicals-top{top:0}.musicals-bottom{bottom:0}
+.musicals-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.musicals-left{float:left!important}.musicals-right{float:right!important}
+.musicals-tiny{font-size:10px!important}.musicals-small{font-size:12px!important}
+.musicals-medium{font-size:15px!important}.musicals-large{font-size:18px!important}
+.musicals-xlarge{font-size:24px!important}.musicals-xxlarge{font-size:36px!important}
+.musicals-xxxlarge{font-size:48px!important}.musicals-jumbo{font-size:64px!important}
+.musicals-vertical{word-break:break-all;line-height:1;text-align:center;width:0.6em}
+.musicals-left-align{text-align:left!important}.musicals-right-align{text-align:right!important}
+.musicals-justify{text-align:justify!important}.musicals-center{text-align:center!important}
+.musicals-display-topleft{position:absolute;left:0;top:0}.musicals-display-topright{position:absolute;right:0;top:0}
+.musicals-display-bottomleft{position:absolute;left:0;bottom:0}.musicals-display-bottomright{position:absolute;right:0;bottom:0}
+.musicals-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.musicals-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.musicals-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.musicals-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.musicals-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.musicals-circle{border-radius:50%!important}
+.musicals-round-small{border-radius:2px!important}.musicals-round,.musicals-round-medium{border-radius:4px!important}
+.musicals-round-large{border-radius:8px!important}.musicals-round-xlarge{border-radius:16px!important}
+.musicals-round-xxlarge{border-radius:32px!important}.musicals-round-jumbo{border-radius:64px!important}
+.musicals-border-0{border:0!important}.musicals-border{border:1px solid #ccc!important}
+.musicals-border-top{border-top:1px solid #ccc!important}.musicals-border-bottom{border-bottom:1px solid #ccc!important}
+.musicals-border-left{border-left:1px solid #ccc!important}.musicals-border-right{border-right:1px solid #ccc!important}
+.musicals-margin{margin:16px!important}.musicals-margin-0{margin:0!important}
+.musicals-margin-top{margin-top:16px!important}.musicals-margin-bottom{margin-bottom:16px!important}
+.musicals-margin-left{margin-left:16px!important}.musicals-margin-right{margin-right:16px!important}
+.musicals-section{margin-top:16px!important;margin-bottom:16px!important}
+.musicals-padding-tiny{padding:2px 4px!important}.musicals-padding-small{padding:4px 8px!important}
+.musicals-padding-medium,.musicals-padding,.musicals-form{padding:8px 16px!important}
+.musicals-padding-large{padding:12px 24px!important}.musicals-padding-xlarge{padding:16px 32px!important}
+.musicals-padding-xxlarge{padding:24px 48px!important}.musicals-padding-jumbo{padding:32px 64px!important}
+.musicals-padding-4{padding-top:4px!important;padding-bottom:4px!important}
+.musicals-padding-8{padding-top:8px!important;padding-bottom:8px!important}
+.musicals-padding-12{padding-top:12px!important;padding-bottom:12px!important}
+.musicals-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.musicals-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.musicals-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.musicals-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.musicals-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.musicals-padding-128{padding-top:128px!important;padding-bottom:128px!important}
+.musicals-padding-0{padding:0!important}
+.musicals-padding-top{padding-top:8px!important}.musicals-padding-bottom{padding-bottom:8px!important}
+.musicals-padding-left{padding-left:16px!important}.musicals-padding-right{padding-right:16px!important}
+.musicals-topbar{border-top:6px solid #ccc!important}.musicals-bottombar{border-bottom:6px solid #ccc!important}
+.musicals-leftbar{border-left:6px solid #ccc!important}.musicals-rightbar{border-right:6px solid #ccc!important}
+.musicals-row-padding,.musicals-row-padding>.musicals-half,.musicals-row-padding>.musicals-third,.musicals-row-padding>.musicals-twothird,.musicals-row-padding>.musicals-threequarter,.musicals-row-padding>.musicals-quarter,.musicals-row-padding>.musicals-col{padding:0 8px}
+.musicals-spin{animation:musicals-spin 2s infinite linear;-webkit-animation:musicals-spin 2s infinite linear}
+@-webkit-keyframes musicals-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes musicals-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+.musicals-container{padding:0.01em 16px}
+.musicals-panel{padding:0.01em 16px;margin-top:16px!important;margin-bottom:16px!important}
+.musicals-example{background-color:#f1f1f1;padding:0.01em 16px}
+.musicals-code,.musicals-codespan{font-family:Consolas,"courier new";font-size:16px}
+.musicals-code{line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.musicals-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.musicals-example,.musicals-code{margin:20px 0}.musicals-card{border:1px solid #ccc}
+.musicals-card-2,.musicals-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.musicals-card-4,.musicals-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.musicals-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.musicals-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
+.musicals-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
+.musicals-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
+.musicals-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
 @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
-.ynnenu-animate-opacity{-webkit-animation:opac 0.8s;animation:opac 0.8s}
+.musicals-animate-opacity{-webkit-animation:opac 0.8s;animation:opac 0.8s}
 @-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
 @keyframes opac{from{opacity:0} to{opacity:1}}
-.ynnenu-animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
+.musicals-animate-top{position:relative;-webkit-animation:animatetop 0.4s;animation:animatetop 0.4s}
 @-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.ynnenu-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
+.musicals-animate-left{position:relative;-webkit-animation:animateleft 0.4s;animation:animateleft 0.4s}
 @-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-.ynnenu-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
+.musicals-animate-right{position:relative;-webkit-animation:animateright 0.4s;animation:animateright 0.4s}
 @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-.ynnenu-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
+.musicals-animate-bottom{position:relative;-webkit-animation:animatebottom 0.4s;animation:animatebottom 0.4s}
 @-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
 @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-.ynnenu-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
+.musicals-animate-zoom {-webkit-animation:animatezoom 0.6s;animation:animatezoom 0.6s}
 @-webkit-keyframes animatezoom{from{-webkit-transform:scale(0)} to{-webkit-transform:scale(1)}}
 @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
-.ynnenu-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.ynnenu-animate-input:focus{width:100%!important}
-.ynnenu-opacity,.ynnenu-hover-opacity:hover{opacity:0.60;filter:alpha(opacity=60);-webkit-backface-visibility:hidden}
-.ynnenu-opacity-off,.ynnenu-hover-opacity-off:hover{opacity:1;filter:alpha(opacity=100);-webkit-backface-visibility:hidden}
-.ynnenu-opacity-max{opacity:0.25;filter:alpha(opacity=25);-webkit-backface-visibility:hidden}
-.ynnenu-opacity-min{opacity:0.75;filter:alpha(opacity=75);-webkit-backface-visibility:hidden}
-.ynnenu-greyscale-max,.ynnenu-grayscale-max,.ynnenu-hover-greyscale:hover,.ynnenu-hover-grayscale:hover{-webkit-filter:grayscale(100%);filter:grayscale(100%)}
-.ynnenu-greyscale,.ynnenu-grayscale{-webkit-filter:grayscale(75%);filter:grayscale(75%)}
-.ynnenu-greyscale-min,.ynnenu-grayscale-min{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
-.ynnenu-sepia{-webkit-filter:sepia(75%);filter:sepia(75%)}
-.ynnenu-sepia-max,.ynnenu-hover-sepia:hover{-webkit-filter:sepia(100%);filter:sepia(100%)}
-.ynnenu-sepia-min{-webkit-filter:sepia(50%);filter:sepia(50%)}
-.ynnenu-text-shadow{text-shadow:1px 1px 0 #444}.ynnenu-text-shadow-white{text-shadow:1px 1px 0 #ddd}
-.ynnenu-transparent{background-color:transparent!important}
-.ynnenu-hover-none:hover{box-shadow:none!important;background-color:transparent!important}
+.musicals-animate-input{-webkit-transition:width 0.4s ease-in-out;transition:width 0.4s ease-in-out}.musicals-animate-input:focus{width:100%!important}
+.musicals-opacity,.musicals-hover-opacity:hover{opacity:0.60;filter:alpha(opacity=60);-webkit-backface-visibility:hidden}
+.musicals-opacity-off,.musicals-hover-opacity-off:hover{opacity:1;filter:alpha(opacity=100);-webkit-backface-visibility:hidden}
+.musicals-opacity-max{opacity:0.25;filter:alpha(opacity=25);-webkit-backface-visibility:hidden}
+.musicals-opacity-min{opacity:0.75;filter:alpha(opacity=75);-webkit-backface-visibility:hidden}
+.musicals-greyscale-max,.musicals-grayscale-max,.musicals-hover-greyscale:hover,.musicals-hover-grayscale:hover{-webkit-filter:grayscale(100%);filter:grayscale(100%)}
+.musicals-greyscale,.musicals-grayscale{-webkit-filter:grayscale(75%);filter:grayscale(75%)}
+.musicals-greyscale-min,.musicals-grayscale-min{-webkit-filter:grayscale(50%);filter:grayscale(50%)}
+.musicals-sepia{-webkit-filter:sepia(75%);filter:sepia(75%)}
+.musicals-sepia-max,.musicals-hover-sepia:hover{-webkit-filter:sepia(100%);filter:sepia(100%)}
+.musicals-sepia-min{-webkit-filter:sepia(50%);filter:sepia(50%)}
+.musicals-text-shadow{text-shadow:1px 1px 0 #444}.musicals-text-shadow-white{text-shadow:1px 1px 0 #ddd}
+.musicals-transparent{background-color:transparent!important}
+.musicals-hover-none:hover{box-shadow:none!important;background-color:transparent!important}
 /* Colors */
-.ynnenu-amber,.ynnenu-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
-.ynnenu-aqua,.ynnenu-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
-.ynnenu-blue,.ynnenu-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
-.ynnenu-light-blue,.ynnenu-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
-.ynnenu-brown,.ynnenu-hover-brown:hover{color:#fff!important;background-color:#795548!important}
-.ynnenu-cyan,.ynnenu-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
-.ynnenu-blue-grey,.ynnenu-hover-blue-grey:hover,.ynnenu-blue-gray,.ynnenu-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
-.ynnenu-green,.ynnenu-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
-.ynnenu-light-green,.ynnenu-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
-.ynnenu-indigo,.ynnenu-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
-.ynnenu-khaki,.ynnenu-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
-.ynnenu-lime,.ynnenu-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
-.ynnenu-orange,.ynnenu-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
-.ynnenu-deep-orange,.ynnenu-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
-.ynnenu-pink,.ynnenu-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
-.ynnenu-purple,.ynnenu-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
-.ynnenu-deep-purple,.ynnenu-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.ynnenu-red,.ynnenu-hover-red:hover{color:#fff!important;background-color:#f44336!important}
-.ynnenu-sand,.ynnenu-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
-.ynnenu-teal,.ynnenu-hover-teal:hover{color:#fff!important;background-color:#009688!important}
-.ynnenu-yellow,.ynnenu-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
-.ynnenu-white,.ynnenu-hover-white:hover{color:#000!important;background-color:#fff!important}
-.ynnenu-black,.ynnenu-hover-black:hover{color:#fff!important;background-color:#000!important}
-.ynnenu-grey,.ynnenu-hover-grey:hover,.ynnenu-gray,.ynnenu-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
-.ynnenu-light-grey,.ynnenu-hover-light-grey:hover,.ynnenu-light-gray,.ynnenu-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
-.ynnenu-dark-grey,.ynnenu-hover-dark-grey:hover,.ynnenu-dark-gray,.ynnenu-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-.ynnenu-pale-red,.ynnenu-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
-.ynnenu-pale-green,.ynnenu-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
-.ynnenu-pale-yellow,.ynnenu-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
-.ynnenu-pale-blue,.ynnenu-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
-.ynnenu-text-amber,.ynnenu-hover-text-amber:hover{color:#ffc107!important}
-.ynnenu-text-aqua,.ynnenu-hover-text-aqua:hover{color:#00ffff!important}
-.ynnenu-text-blue,.ynnenu-hover-text-blue:hover{color:#2196F3!important}
-.ynnenu-text-light-blue,.ynnenu-hover-text-light-blue:hover{color:#87CEEB!important}
-.ynnenu-text-brown,.ynnenu-hover-text-brown:hover{color:#795548!important}
-.ynnenu-text-cyan,.ynnenu-hover-text-cyan:hover{color:#00bcd4!important}
-.ynnenu-text-blue-grey,.ynnenu-hover-text-blue-grey:hover,.ynnenu-text-blue-gray,.ynnenu-hover-text-blue-gray:hover{color:#607d8b!important}
-.ynnenu-text-green,.ynnenu-hover-text-green:hover{color:#4CAF50!important}
-.ynnenu-text-light-green,.ynnenu-hover-text-light-green:hover{color:#8bc34a!important}
-.ynnenu-text-indigo,.ynnenu-hover-text-indigo:hover{color:#3f51b5!important}
-.ynnenu-text-khaki,.ynnenu-hover-text-khaki:hover{color:#b4aa50!important}
-.ynnenu-text-lime,.ynnenu-hover-text-lime:hover{color:#cddc39!important}
-.ynnenu-text-orange,.ynnenu-hover-text-orange:hover{color:#ff9800!important}
-.ynnenu-text-deep-orange,.ynnenu-hover-text-deep-orange:hover{color:#ff5722!important}
-.ynnenu-text-pink,.ynnenu-hover-text-pink:hover{color:#e91e63!important}
-.ynnenu-text-purple,.ynnenu-hover-text-purple:hover{color:#9c27b0!important}
-.ynnenu-text-deep-purple,.ynnenu-hover-text-deep-purple:hover{color:#673ab7!important}
-.ynnenu-text-red,.ynnenu-hover-text-red:hover{color:#f44336!important}
-.ynnenu-text-sand,.ynnenu-hover-text-sand:hover{color:#fdf5e6!important}
-.ynnenu-text-teal,.ynnenu-hover-text-teal:hover{color:#009688!important}
-.ynnenu-text-yellow,.ynnenu-hover-text-yellow:hover{color:#d2be0e!important}
-.ynnenu-text-white,.ynnenu-hover-text-white:hover{color:#fff!important}
-.ynnenu-text-black,.ynnenu-hover-text-black:hover{color:#000!important}
-.ynnenu-text-grey,.ynnenu-hover-text-grey:hover,.ynnenu-text-gray,.ynnenu-hover-text-gray:hover{color:#757575!important}
-.ynnenu-text-light-grey,.ynnenu-hover-text-light-grey:hover,.ynnenu-text-light-gray,.ynnenu-hover-text-light-gray:hover{color:#f1f1f1!important}
-.ynnenu-text-dark-grey,.ynnenu-hover-text-dark-grey:hover,.ynnenu-text-dark-gray,.ynnenu-hover-text-dark-gray:hover{color:#3a3a3a!important}
-.ynnenu-border-amber,.ynnenu-hover-border-amber:hover{border-color:#ffc107!important}
-.ynnenu-border-aqua,.ynnenu-hover-border-aqua:hover{border-color:#00ffff!important}
-.ynnenu-border-blue,.ynnenu-hover-border-blue:hover{border-color:#2196F3!important}
-.ynnenu-border-light-blue,.ynnenu-hover-border-light-blue:hover{border-color:#87CEEB!important}
-.ynnenu-border-brown,.ynnenu-hover-border-brown:hover{border-color:#795548!important}
-.ynnenu-border-cyan,.ynnenu-hover-border-cyan:hover{border-color:#00bcd4!important}
-.ynnenu-border-blue-grey,.ynnenu-hover-blue-grey:hover,.ynnenu-border-blue-gray,.ynnenu-hover-blue-gray:hover{border-color:#607d8b!important}
-.ynnenu-border-green,.ynnenu-hover-border-green:hover{border-color:#4CAF50!important}
-.ynnenu-border-light-green,.ynnenu-hover-border-light-green:hover{border-color:#8bc34a!important}
-.ynnenu-border-indigo,.ynnenu-hover-border-indigo:hover{border-color:#3f51b5!important}
-.ynnenu-border-khaki,.ynnenu-hover-border-khaki:hover{border-color:#f0e68c!important}
-.ynnenu-border-lime,.ynnenu-hover-border-lime:hover{border-color:#cddc39!important}
-.ynnenu-border-orange,.ynnenu-hover-border-orange:hover{border-color:#ff9800!important}
-.ynnenu-border-deep-orange,.ynnenu-hover-border-deep-orange:hover{border-color:#ff5722!important}
-.ynnenu-border-pink,.ynnenu-hover-border-pink:hover{border-color:#e91e63!important}
-.ynnenu-border-purple,.ynnenu-hover-border-purple:hover{border-color:#9c27b0!important}
-.ynnenu-border-deep-purple,.ynnenu-hover-border-deep-purple:hover{border-color:#673ab7!important}
-.ynnenu-border-red,.ynnenu-hover-border-red:hover{border-color:#f44336!important}
-.ynnenu-border-sand,.ynnenu-hover-border-sand:hover{border-color:#fdf5e6!important}
-.ynnenu-border-teal,.ynnenu-hover-border-teal:hover{border-color:#009688!important}
-.ynnenu-border-yellow,.ynnenu-hover-border-yellow:hover{border-color:#ffeb3b!important}
-.ynnenu-border-white,.ynnenu-hover-border-white:hover{border-color:#fff!important}
-.ynnenu-border-black,.ynnenu-hover-border-black:hover{border-color:#000!important}
-.ynnenu-border-grey,.ynnenu-hover-border-grey:hover,.ynnenu-border-gray,.ynnenu-hover-border-gray:hover{border-color:#9e9e9e!important}
-.ynnenu-border-light-grey,.ynnenu-hover-border-light-grey:hover,.ynnenu-border-light-gray,.ynnenu-hover-border-light-gray:hover{border-color:#f1f1f1!important}
-.ynnenu-border-dark-grey,.ynnenu-hover-border-dark-grey:hover,.ynnenu-border-dark-gray,.ynnenu-hover-border-dark-gray:hover{border-color:#616161!important}
-.ynnenu-border-pale-red,.ynnenu-hover-border-pale-red:hover{border-color:#ffe7e7!important}.ynnenu-border-pale-green,.ynnenu-hover-border-pale-green:hover{border-color:#e7ffe7!important}
-.ynnenu-border-pale-yellow,.ynnenu-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.ynnenu-border-pale-blue,.ynnenu-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+.musicals-amber,.musicals-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.musicals-aqua,.musicals-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.musicals-blue,.musicals-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.musicals-light-blue,.musicals-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.musicals-brown,.musicals-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.musicals-cyan,.musicals-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.musicals-blue-grey,.musicals-hover-blue-grey:hover,.musicals-blue-gray,.musicals-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.musicals-green,.musicals-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.musicals-light-green,.musicals-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.musicals-indigo,.musicals-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.musicals-khaki,.musicals-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.musicals-lime,.musicals-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.musicals-orange,.musicals-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.musicals-deep-orange,.musicals-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.musicals-pink,.musicals-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.musicals-purple,.musicals-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.musicals-deep-purple,.musicals-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.musicals-red,.musicals-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.musicals-sand,.musicals-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.musicals-teal,.musicals-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.musicals-yellow,.musicals-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.musicals-white,.musicals-hover-white:hover{color:#000!important;background-color:#fff!important}
+.musicals-black,.musicals-hover-black:hover{color:#fff!important;background-color:#000!important}
+.musicals-grey,.musicals-hover-grey:hover,.musicals-gray,.musicals-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.musicals-light-grey,.musicals-hover-light-grey:hover,.musicals-light-gray,.musicals-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.musicals-dark-grey,.musicals-hover-dark-grey:hover,.musicals-dark-gray,.musicals-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.musicals-pale-red,.musicals-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.musicals-pale-green,.musicals-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.musicals-pale-yellow,.musicals-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.musicals-pale-blue,.musicals-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.musicals-text-amber,.musicals-hover-text-amber:hover{color:#ffc107!important}
+.musicals-text-aqua,.musicals-hover-text-aqua:hover{color:#00ffff!important}
+.musicals-text-blue,.musicals-hover-text-blue:hover{color:#2196F3!important}
+.musicals-text-light-blue,.musicals-hover-text-light-blue:hover{color:#87CEEB!important}
+.musicals-text-brown,.musicals-hover-text-brown:hover{color:#795548!important}
+.musicals-text-cyan,.musicals-hover-text-cyan:hover{color:#00bcd4!important}
+.musicals-text-blue-grey,.musicals-hover-text-blue-grey:hover,.musicals-text-blue-gray,.musicals-hover-text-blue-gray:hover{color:#607d8b!important}
+.musicals-text-green,.musicals-hover-text-green:hover{color:#4CAF50!important}
+.musicals-text-light-green,.musicals-hover-text-light-green:hover{color:#8bc34a!important}
+.musicals-text-indigo,.musicals-hover-text-indigo:hover{color:#3f51b5!important}
+.musicals-text-khaki,.musicals-hover-text-khaki:hover{color:#b4aa50!important}
+.musicals-text-lime,.musicals-hover-text-lime:hover{color:#cddc39!important}
+.musicals-text-orange,.musicals-hover-text-orange:hover{color:#ff9800!important}
+.musicals-text-deep-orange,.musicals-hover-text-deep-orange:hover{color:#ff5722!important}
+.musicals-text-pink,.musicals-hover-text-pink:hover{color:#e91e63!important}
+.musicals-text-purple,.musicals-hover-text-purple:hover{color:#9c27b0!important}
+.musicals-text-deep-purple,.musicals-hover-text-deep-purple:hover{color:#673ab7!important}
+.musicals-text-red,.musicals-hover-text-red:hover{color:#f44336!important}
+.musicals-text-sand,.musicals-hover-text-sand:hover{color:#fdf5e6!important}
+.musicals-text-teal,.musicals-hover-text-teal:hover{color:#009688!important}
+.musicals-text-yellow,.musicals-hover-text-yellow:hover{color:#d2be0e!important}
+.musicals-text-white,.musicals-hover-text-white:hover{color:#fff!important}
+.musicals-text-black,.musicals-hover-text-black:hover{color:#000!important}
+.musicals-text-grey,.musicals-hover-text-grey:hover,.musicals-text-gray,.musicals-hover-text-gray:hover{color:#757575!important}
+.musicals-text-light-grey,.musicals-hover-text-light-grey:hover,.musicals-text-light-gray,.musicals-hover-text-light-gray:hover{color:#f1f1f1!important}
+.musicals-text-dark-grey,.musicals-hover-text-dark-grey:hover,.musicals-text-dark-gray,.musicals-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.musicals-border-amber,.musicals-hover-border-amber:hover{border-color:#ffc107!important}
+.musicals-border-aqua,.musicals-hover-border-aqua:hover{border-color:#00ffff!important}
+.musicals-border-blue,.musicals-hover-border-blue:hover{border-color:#2196F3!important}
+.musicals-border-light-blue,.musicals-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.musicals-border-brown,.musicals-hover-border-brown:hover{border-color:#795548!important}
+.musicals-border-cyan,.musicals-hover-border-cyan:hover{border-color:#00bcd4!important}
+.musicals-border-blue-grey,.musicals-hover-blue-grey:hover,.musicals-border-blue-gray,.musicals-hover-blue-gray:hover{border-color:#607d8b!important}
+.musicals-border-green,.musicals-hover-border-green:hover{border-color:#4CAF50!important}
+.musicals-border-light-green,.musicals-hover-border-light-green:hover{border-color:#8bc34a!important}
+.musicals-border-indigo,.musicals-hover-border-indigo:hover{border-color:#3f51b5!important}
+.musicals-border-khaki,.musicals-hover-border-khaki:hover{border-color:#f0e68c!important}
+.musicals-border-lime,.musicals-hover-border-lime:hover{border-color:#cddc39!important}
+.musicals-border-orange,.musicals-hover-border-orange:hover{border-color:#ff9800!important}
+.musicals-border-deep-orange,.musicals-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.musicals-border-pink,.musicals-hover-border-pink:hover{border-color:#e91e63!important}
+.musicals-border-purple,.musicals-hover-border-purple:hover{border-color:#9c27b0!important}
+.musicals-border-deep-purple,.musicals-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.musicals-border-red,.musicals-hover-border-red:hover{border-color:#f44336!important}
+.musicals-border-sand,.musicals-hover-border-sand:hover{border-color:#fdf5e6!important}
+.musicals-border-teal,.musicals-hover-border-teal:hover{border-color:#009688!important}
+.musicals-border-yellow,.musicals-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.musicals-border-white,.musicals-hover-border-white:hover{border-color:#fff!important}
+.musicals-border-black,.musicals-hover-border-black:hover{border-color:#000!important}
+.musicals-border-grey,.musicals-hover-border-grey:hover,.musicals-border-gray,.musicals-hover-border-gray:hover{border-color:#9e9e9e!important}
+.musicals-border-light-grey,.musicals-hover-border-light-grey:hover,.musicals-border-light-gray,.musicals-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.musicals-border-dark-grey,.musicals-hover-border-dark-grey:hover,.musicals-border-dark-gray,.musicals-hover-border-dark-gray:hover{border-color:#616161!important}
+.musicals-border-pale-red,.musicals-hover-border-pale-red:hover{border-color:#ffe7e7!important}.musicals-border-pale-green,.musicals-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.musicals-border-pale-yellow,.musicals-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.musicals-border-pale-blue,.musicals-hover-border-pale-blue:hover{border-color:#e7ffff!important}
